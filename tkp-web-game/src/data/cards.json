@@ -1,0 +1,1397 @@
+[
+  {
+    "id": "tkp_hakata_r",
+    "name": "TKP博多カンファレンスセンター",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 40,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 10,
+      "satisfaction": 8
+    }
+  },
+  {
+    "id": "tkp_hakata_sr",
+    "name": "TKP博多住吉ホール",
+    "rarity": "SR",
+    "type": "hall",
+    "capacity": 100,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 14,
+      "sales": 320000
+    }
+  },
+  {
+    "id": "tkp_kyobashi_r",
+    "name": "TKPガーデンシティPREMIUM京橋",
+    "rarity": "R",
+    "type": "premium",
+    "capacity": 20,
+    "location": "Tokyo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 8,
+      "sales": 120000
+    }
+  },
+  {
+    "id": "tkp_kyobashi_sr",
+    "name": "京橋カンファレンス実務カード",
+    "rarity": "SR",
+    "type": "conference",
+    "capacity": 40,
+    "location": "Tokyo",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "proposal": 12,
+      "satisfaction": 10
+    }
+  },
+  {
+    "id": "tkp_osaka_ssr",
+    "name": "TKPガーデンシティPREMIUM大阪梅田",
+    "rarity": "SSR",
+    "type": "premium",
+    "capacity": 200,
+    "location": "Osaka",
+    "image": "/assets/cards/template-SSR.png",
+    "stats": {
+      "proposal": 18,
+      "sales": 500000
+    }
+  },
+  {
+    "id": "tkp_gen_1",
+    "name": "TKPガーデンシティHiroshima",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 46,
+    "location": "Hiroshima",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 14,
+      "satisfaction": 12,
+      "sales": 81454
+    }
+  },
+  {
+    "id": "tkp_gen_2",
+    "name": "TKPガーデンシティFukuoka",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 35,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 12,
+      "satisfaction": 13,
+      "sales": 105529
+    }
+  },
+  {
+    "id": "tkp_gen_3",
+    "name": "TKPガーデンシティKyotoプレミアム",
+    "rarity": "SSR",
+    "type": "banquet",
+    "capacity": 393,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-SSR.png",
+    "stats": {
+      "knowledge": 38,
+      "satisfaction": 50,
+      "sales": 768785
+    }
+  },
+  {
+    "id": "tkp_gen_4",
+    "name": "TKPビジネスセンターSendai",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 35,
+    "location": "Sendai",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 14,
+      "satisfaction": 8,
+      "sales": 139913
+    }
+  },
+  {
+    "id": "tkp_gen_5",
+    "name": "TKPガーデンシティNagoya",
+    "rarity": "SR",
+    "type": "hall",
+    "capacity": 129,
+    "location": "Nagoya",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 24,
+      "satisfaction": 26,
+      "sales": 328782
+    }
+  },
+  {
+    "id": "tkp_gen_6",
+    "name": "TKPビジネスセンターHiroshimaSOUTH",
+    "rarity": "R",
+    "type": "hall",
+    "capacity": 47,
+    "location": "Hiroshima",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 14,
+      "satisfaction": 12,
+      "sales": 124576
+    }
+  },
+  {
+    "id": "tkp_gen_7",
+    "name": "TKPビジネスセンターSapporo",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 55,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 7,
+      "satisfaction": 13,
+      "sales": 120783
+    }
+  },
+  {
+    "id": "tkp_gen_8",
+    "name": "TKP貸会議室Kobe",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 25,
+    "location": "Kobe",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 12,
+      "satisfaction": 13,
+      "sales": 70650
+    }
+  },
+  {
+    "id": "tkp_gen_9",
+    "name": "TKPホールNagoya本館",
+    "rarity": "SR",
+    "type": "office",
+    "capacity": 193,
+    "location": "Nagoya",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 19,
+      "satisfaction": 20,
+      "sales": 196885
+    }
+  },
+  {
+    "id": "tkp_gen_10",
+    "name": "TKPガーデンシティFukuoka本館",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 33,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 13,
+      "satisfaction": 8,
+      "sales": 72791
+    }
+  },
+  {
+    "id": "tkp_gen_11",
+    "name": "TKPカンファレンスセンターKyoto",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 18,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 8,
+      "satisfaction": 10,
+      "sales": 135035
+    }
+  },
+  {
+    "id": "tkp_gen_12",
+    "name": "TKPビジネスセンターTokyoタワー",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 31,
+    "location": "Tokyo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 10,
+      "satisfaction": 8,
+      "sales": 81296
+    }
+  },
+  {
+    "id": "tkp_gen_13",
+    "name": "TKP貸会議室Osakaタワー",
+    "rarity": "SR",
+    "type": "office",
+    "capacity": 168,
+    "location": "Osaka",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 27,
+      "satisfaction": 23,
+      "sales": 186727
+    }
+  },
+  {
+    "id": "tkp_gen_14",
+    "name": "TKPビジネスセンターNagoya本館",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 37,
+    "location": "Nagoya",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 11,
+      "satisfaction": 8,
+      "sales": 108633
+    }
+  },
+  {
+    "id": "tkp_gen_15",
+    "name": "TKPホールOsaka",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 38,
+    "location": "Osaka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 13,
+      "satisfaction": 13,
+      "sales": 123005
+    }
+  },
+  {
+    "id": "tkp_gen_16",
+    "name": "TKP貸会議室Kobe",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 42,
+    "location": "Kobe",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 10,
+      "satisfaction": 13,
+      "sales": 91545
+    }
+  },
+  {
+    "id": "tkp_gen_17",
+    "name": "TKPガーデンシティKyoto",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 49,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 12,
+      "satisfaction": 14,
+      "sales": 50065
+    }
+  },
+  {
+    "id": "tkp_gen_18",
+    "name": "TKPホールFukuoka",
+    "rarity": "R",
+    "type": "hall",
+    "capacity": 38,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 13,
+      "satisfaction": 6,
+      "sales": 133494
+    }
+  },
+  {
+    "id": "tkp_gen_19",
+    "name": "TKPガーデンシティSendaiプレミアム",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 34,
+    "location": "Sendai",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 6,
+      "satisfaction": 7,
+      "sales": 50523
+    }
+  },
+  {
+    "id": "tkp_gen_20",
+    "name": "TKPホールKobe駅前",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 32,
+    "location": "Kobe",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 7,
+      "satisfaction": 9,
+      "sales": 132066
+    }
+  },
+  {
+    "id": "tkp_gen_21",
+    "name": "TKP貸会議室Kyoto",
+    "rarity": "SR",
+    "type": "banquet",
+    "capacity": 189,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 29,
+      "satisfaction": 27,
+      "sales": 152482
+    }
+  },
+  {
+    "id": "tkp_gen_22",
+    "name": "TKPガーデンシティKyoto",
+    "rarity": "SR",
+    "type": "conference",
+    "capacity": 86,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 16,
+      "satisfaction": 27,
+      "sales": 237718
+    }
+  },
+  {
+    "id": "tkp_gen_23",
+    "name": "TKPホールKyotoEAST",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 20,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 10,
+      "satisfaction": 10,
+      "sales": 82732
+    }
+  },
+  {
+    "id": "tkp_gen_24",
+    "name": "TKP貸会議室Nagoyaタワー",
+    "rarity": "R",
+    "type": "hall",
+    "capacity": 33,
+    "location": "Nagoya",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 12,
+      "satisfaction": 5,
+      "sales": 68979
+    }
+  },
+  {
+    "id": "tkp_gen_25",
+    "name": "TKPホールTokyo本館",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 38,
+    "location": "Tokyo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 10,
+      "satisfaction": 10,
+      "sales": 56578
+    }
+  },
+  {
+    "id": "tkp_gen_26",
+    "name": "TKPガーデンシティKyoto",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 41,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 9,
+      "satisfaction": 6,
+      "sales": 127520
+    }
+  },
+  {
+    "id": "tkp_gen_27",
+    "name": "TKPカンファレンスセンターTokyo駅前",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 11,
+    "location": "Tokyo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 13,
+      "satisfaction": 6,
+      "sales": 130266
+    }
+  },
+  {
+    "id": "tkp_gen_28",
+    "name": "TKPビジネスセンターKyotoタワー",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 24,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 13,
+      "satisfaction": 12,
+      "sales": 84155
+    }
+  },
+  {
+    "id": "tkp_gen_29",
+    "name": "TKP貸会議室Nagoya",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 48,
+    "location": "Nagoya",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 8,
+      "satisfaction": 13,
+      "sales": 149243
+    }
+  },
+  {
+    "id": "tkp_gen_30",
+    "name": "TKPガーデンシティKobe",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 33,
+    "location": "Kobe",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 12,
+      "satisfaction": 13,
+      "sales": 84676
+    }
+  },
+  {
+    "id": "tkp_gen_31",
+    "name": "TKP貸会議室Kyoto",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 58,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 5,
+      "satisfaction": 5,
+      "sales": 75731
+    }
+  },
+  {
+    "id": "tkp_gen_32",
+    "name": "TKPガーデンシティYokohamaアネックス",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 22,
+    "location": "Yokohama",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 5,
+      "satisfaction": 7,
+      "sales": 52204
+    }
+  },
+  {
+    "id": "tkp_gen_33",
+    "name": "TKP貸会議室Osaka",
+    "rarity": "SSR",
+    "type": "office",
+    "capacity": 530,
+    "location": "Osaka",
+    "image": "/assets/cards/template-SSR.png",
+    "stats": {
+      "knowledge": 33,
+      "satisfaction": 45,
+      "sales": 828630
+    }
+  },
+  {
+    "id": "tkp_gen_34",
+    "name": "TKPホールKyotoNORTH",
+    "rarity": "SR",
+    "type": "office",
+    "capacity": 184,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 26,
+      "satisfaction": 22,
+      "sales": 347634
+    }
+  },
+  {
+    "id": "tkp_gen_35",
+    "name": "TKPカンファレンスセンターSapporoNORTH",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 48,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 9,
+      "satisfaction": 8,
+      "sales": 52215
+    }
+  },
+  {
+    "id": "tkp_gen_36",
+    "name": "TKPビジネスセンターSapporoSOUTH",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 36,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 12,
+      "satisfaction": 7,
+      "sales": 97168
+    }
+  },
+  {
+    "id": "tkp_gen_37",
+    "name": "TKPカンファレンスセンターNagoyaSOUTH",
+    "rarity": "SR",
+    "type": "office",
+    "capacity": 52,
+    "location": "Nagoya",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 18,
+      "satisfaction": 11,
+      "sales": 389914
+    }
+  },
+  {
+    "id": "tkp_gen_38",
+    "name": "TKPホールSapporo",
+    "rarity": "SSR",
+    "type": "conference",
+    "capacity": 224,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-SSR.png",
+    "stats": {
+      "knowledge": 21,
+      "satisfaction": 40,
+      "sales": 567020
+    }
+  },
+  {
+    "id": "tkp_gen_39",
+    "name": "TKPビジネスセンターKobe",
+    "rarity": "SR",
+    "type": "banquet",
+    "capacity": 137,
+    "location": "Kobe",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 11,
+      "satisfaction": 13,
+      "sales": 285775
+    }
+  },
+  {
+    "id": "tkp_gen_40",
+    "name": "TKPビジネスセンターSapporo",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 43,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 10,
+      "satisfaction": 9,
+      "sales": 97107
+    }
+  },
+  {
+    "id": "tkp_gen_41",
+    "name": "TKPガーデンシティTokyoWEST",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 49,
+    "location": "Tokyo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 5,
+      "satisfaction": 5,
+      "sales": 111527
+    }
+  },
+  {
+    "id": "tkp_gen_42",
+    "name": "TKPガーデンシティYokohamaNORTH",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 49,
+    "location": "Yokohama",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 5,
+      "satisfaction": 14,
+      "sales": 93471
+    }
+  },
+  {
+    "id": "tkp_gen_43",
+    "name": "TKPビジネスセンターYokohama",
+    "rarity": "SR",
+    "type": "office",
+    "capacity": 141,
+    "location": "Yokohama",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 12,
+      "satisfaction": 27,
+      "sales": 392527
+    }
+  },
+  {
+    "id": "tkp_gen_44",
+    "name": "TKP貸会議室Kobeタワー",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 54,
+    "location": "Kobe",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 11,
+      "satisfaction": 7,
+      "sales": 137292
+    }
+  },
+  {
+    "id": "tkp_gen_45",
+    "name": "TKPガーデンシティTokyo",
+    "rarity": "R",
+    "type": "hall",
+    "capacity": 57,
+    "location": "Tokyo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 11,
+      "satisfaction": 5,
+      "sales": 134344
+    }
+  },
+  {
+    "id": "tkp_gen_46",
+    "name": "TKP貸会議室Kyoto",
+    "rarity": "SR",
+    "type": "conference",
+    "capacity": 186,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 11,
+      "satisfaction": 27,
+      "sales": 312770
+    }
+  },
+  {
+    "id": "tkp_gen_47",
+    "name": "TKP貸会議室Sapporo",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 41,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 8,
+      "satisfaction": 11,
+      "sales": 55670
+    }
+  },
+  {
+    "id": "tkp_gen_48",
+    "name": "TKPカンファレンスセンターFukuoka",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 30,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 10,
+      "satisfaction": 13,
+      "sales": 55958
+    }
+  },
+  {
+    "id": "tkp_gen_49",
+    "name": "TKPガーデンシティFukuoka",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 42,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 8,
+      "satisfaction": 7,
+      "sales": 107548
+    }
+  },
+  {
+    "id": "tkp_gen_50",
+    "name": "TKPビジネスセンターSapporoWEST",
+    "rarity": "SSR",
+    "type": "office",
+    "capacity": 614,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-SSR.png",
+    "stats": {
+      "knowledge": 31,
+      "satisfaction": 27,
+      "sales": 552750
+    }
+  },
+  {
+    "id": "tkp_gen_51",
+    "name": "TKPホールTokyo",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 26,
+    "location": "Tokyo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 13,
+      "satisfaction": 12,
+      "sales": 127034
+    }
+  },
+  {
+    "id": "tkp_gen_52",
+    "name": "TKPガーデンシティSapporo",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 58,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 7,
+      "satisfaction": 7,
+      "sales": 63399
+    }
+  },
+  {
+    "id": "tkp_gen_53",
+    "name": "TKP貸会議室Hiroshima本館",
+    "rarity": "SR",
+    "type": "banquet",
+    "capacity": 188,
+    "location": "Hiroshima",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 17,
+      "satisfaction": 14,
+      "sales": 296860
+    }
+  },
+  {
+    "id": "tkp_gen_54",
+    "name": "TKP貸会議室Osaka",
+    "rarity": "SR",
+    "type": "conference",
+    "capacity": 181,
+    "location": "Osaka",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 10,
+      "satisfaction": 23,
+      "sales": 204301
+    }
+  },
+  {
+    "id": "tkp_gen_55",
+    "name": "TKP貸会議室HiroshimaSOUTH",
+    "rarity": "SR",
+    "type": "conference",
+    "capacity": 74,
+    "location": "Hiroshima",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 11,
+      "satisfaction": 19,
+      "sales": 449238
+    }
+  },
+  {
+    "id": "tkp_gen_56",
+    "name": "TKPガーデンシティTokyo本館",
+    "rarity": "SR",
+    "type": "banquet",
+    "capacity": 111,
+    "location": "Tokyo",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 20,
+      "satisfaction": 26,
+      "sales": 443706
+    }
+  },
+  {
+    "id": "tkp_gen_57",
+    "name": "TKPカンファレンスセンターTokyo",
+    "rarity": "SR",
+    "type": "conference",
+    "capacity": 195,
+    "location": "Tokyo",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 22,
+      "satisfaction": 18,
+      "sales": 163966
+    }
+  },
+  {
+    "id": "tkp_gen_58",
+    "name": "TKPカンファレンスセンターSapporo",
+    "rarity": "SR",
+    "type": "conference",
+    "capacity": 116,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 16,
+      "satisfaction": 26,
+      "sales": 268267
+    }
+  },
+  {
+    "id": "tkp_gen_59",
+    "name": "TKPビジネスセンターKyoto",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 19,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 7,
+      "satisfaction": 14,
+      "sales": 56821
+    }
+  },
+  {
+    "id": "tkp_gen_60",
+    "name": "TKPカンファレンスセンターKyotoNORTH",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 50,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 6,
+      "satisfaction": 10,
+      "sales": 99802
+    }
+  },
+  {
+    "id": "tkp_gen_61",
+    "name": "TKP貸会議室Fukuoka",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 35,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 6,
+      "satisfaction": 7,
+      "sales": 104924
+    }
+  },
+  {
+    "id": "tkp_gen_62",
+    "name": "TKPカンファレンスセンターSapporoEAST",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 25,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 10,
+      "satisfaction": 11,
+      "sales": 103256
+    }
+  },
+  {
+    "id": "tkp_gen_63",
+    "name": "TKPホールYokohamaSOUTH",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 46,
+    "location": "Yokohama",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 10,
+      "satisfaction": 6,
+      "sales": 85717
+    }
+  },
+  {
+    "id": "tkp_gen_64",
+    "name": "TKPカンファレンスセンターYokohama駅前",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 23,
+    "location": "Yokohama",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 14,
+      "satisfaction": 5,
+      "sales": 121023
+    }
+  },
+  {
+    "id": "tkp_gen_65",
+    "name": "TKPビジネスセンターFukuokaタワー",
+    "rarity": "R",
+    "type": "hall",
+    "capacity": 52,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 12,
+      "satisfaction": 11,
+      "sales": 72877
+    }
+  },
+  {
+    "id": "tkp_gen_66",
+    "name": "TKPカンファレンスセンターSapporo本館",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 22,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 12,
+      "satisfaction": 13,
+      "sales": 63833
+    }
+  },
+  {
+    "id": "tkp_gen_67",
+    "name": "TKPガーデンシティHiroshimaタワー",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 45,
+    "location": "Hiroshima",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 9,
+      "satisfaction": 12,
+      "sales": 95568
+    }
+  },
+  {
+    "id": "tkp_gen_68",
+    "name": "TKP貸会議室Kyotoタワー",
+    "rarity": "R",
+    "type": "hall",
+    "capacity": 43,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 6,
+      "satisfaction": 7,
+      "sales": 52419
+    }
+  },
+  {
+    "id": "tkp_gen_69",
+    "name": "TKPビジネスセンターKobeSOUTH",
+    "rarity": "SR",
+    "type": "office",
+    "capacity": 108,
+    "location": "Kobe",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 15,
+      "satisfaction": 24,
+      "sales": 234671
+    }
+  },
+  {
+    "id": "tkp_gen_70",
+    "name": "TKPホールKobe",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 19,
+    "location": "Kobe",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 14,
+      "satisfaction": 7,
+      "sales": 144121
+    }
+  },
+  {
+    "id": "tkp_gen_71",
+    "name": "TKPホールOsaka",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 19,
+    "location": "Osaka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 12,
+      "satisfaction": 6,
+      "sales": 104544
+    }
+  },
+  {
+    "id": "tkp_gen_72",
+    "name": "TKPホールYokohama",
+    "rarity": "SR",
+    "type": "banquet",
+    "capacity": 142,
+    "location": "Yokohama",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 18,
+      "satisfaction": 28,
+      "sales": 270916
+    }
+  },
+  {
+    "id": "tkp_gen_73",
+    "name": "TKPガーデンシティFukuoka",
+    "rarity": "SR",
+    "type": "hall",
+    "capacity": 109,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 23,
+      "satisfaction": 25,
+      "sales": 284542
+    }
+  },
+  {
+    "id": "tkp_gen_74",
+    "name": "TKPビジネスセンターHiroshimaプレミアム",
+    "rarity": "SR",
+    "type": "hall",
+    "capacity": 122,
+    "location": "Hiroshima",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 17,
+      "satisfaction": 26,
+      "sales": 280053
+    }
+  },
+  {
+    "id": "tkp_gen_75",
+    "name": "TKPガーデンシティNagoyaWEST",
+    "rarity": "R",
+    "type": "hall",
+    "capacity": 11,
+    "location": "Nagoya",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 11,
+      "satisfaction": 6,
+      "sales": 53254
+    }
+  },
+  {
+    "id": "tkp_gen_76",
+    "name": "TKPビジネスセンターKyoto",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 14,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 7,
+      "satisfaction": 10,
+      "sales": 140548
+    }
+  },
+  {
+    "id": "tkp_gen_77",
+    "name": "TKPホールOsakaプレミアム",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 14,
+    "location": "Osaka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 9,
+      "satisfaction": 6,
+      "sales": 78881
+    }
+  },
+  {
+    "id": "tkp_gen_78",
+    "name": "TKPビジネスセンターFukuokaEAST",
+    "rarity": "SR",
+    "type": "hall",
+    "capacity": 54,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 24,
+      "satisfaction": 28,
+      "sales": 267249
+    }
+  },
+  {
+    "id": "tkp_gen_79",
+    "name": "TKPビジネスセンターOsakaSOUTH",
+    "rarity": "SR",
+    "type": "banquet",
+    "capacity": 50,
+    "location": "Osaka",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 29,
+      "satisfaction": 18,
+      "sales": 180382
+    }
+  },
+  {
+    "id": "tkp_gen_80",
+    "name": "TKPホールKobeEAST",
+    "rarity": "R",
+    "type": "hall",
+    "capacity": 33,
+    "location": "Kobe",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 13,
+      "satisfaction": 12,
+      "sales": 141910
+    }
+  },
+  {
+    "id": "tkp_gen_81",
+    "name": "TKPビジネスセンターKyoto",
+    "rarity": "R",
+    "type": "hall",
+    "capacity": 46,
+    "location": "Kyoto",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 14,
+      "satisfaction": 11,
+      "sales": 111110
+    }
+  },
+  {
+    "id": "tkp_gen_82",
+    "name": "TKPカンファレンスセンターOsaka",
+    "rarity": "R",
+    "type": "hall",
+    "capacity": 15,
+    "location": "Osaka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 9,
+      "satisfaction": 14,
+      "sales": 120176
+    }
+  },
+  {
+    "id": "tkp_gen_83",
+    "name": "TKP貸会議室KobeWEST",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 24,
+    "location": "Kobe",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 13,
+      "satisfaction": 8,
+      "sales": 149877
+    }
+  },
+  {
+    "id": "tkp_gen_84",
+    "name": "TKPビジネスセンターOsakaタワー",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 39,
+    "location": "Osaka",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 11,
+      "satisfaction": 6,
+      "sales": 78242
+    }
+  },
+  {
+    "id": "tkp_gen_85",
+    "name": "TKPガーデンシティKobeアネックス",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 18,
+    "location": "Kobe",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 8,
+      "satisfaction": 13,
+      "sales": 77105
+    }
+  },
+  {
+    "id": "tkp_gen_86",
+    "name": "TKPガーデンシティNagoyaWEST",
+    "rarity": "SR",
+    "type": "conference",
+    "capacity": 104,
+    "location": "Nagoya",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 20,
+      "satisfaction": 21,
+      "sales": 326004
+    }
+  },
+  {
+    "id": "tkp_gen_87",
+    "name": "TKPビジネスセンターFukuokaプレミアム",
+    "rarity": "SR",
+    "type": "conference",
+    "capacity": 80,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 21,
+      "satisfaction": 15,
+      "sales": 448236
+    }
+  },
+  {
+    "id": "tkp_gen_88",
+    "name": "TKPビジネスセンターNagoyaアネックス",
+    "rarity": "R",
+    "type": "banquet",
+    "capacity": 49,
+    "location": "Nagoya",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 7,
+      "satisfaction": 14,
+      "sales": 147680
+    }
+  },
+  {
+    "id": "tkp_gen_89",
+    "name": "TKPガーデンシティSapporoEAST",
+    "rarity": "SR",
+    "type": "office",
+    "capacity": 61,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 23,
+      "satisfaction": 20,
+      "sales": 365905
+    }
+  },
+  {
+    "id": "tkp_gen_90",
+    "name": "TKPカンファレンスセンターSapporoプレミアム",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 20,
+    "location": "Sapporo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 10,
+      "satisfaction": 7,
+      "sales": 77955
+    }
+  },
+  {
+    "id": "tkp_gen_91",
+    "name": "TKP貸会議室Fukuokaタワー",
+    "rarity": "SSR",
+    "type": "office",
+    "capacity": 574,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-SSR.png",
+    "stats": {
+      "knowledge": 49,
+      "satisfaction": 49,
+      "sales": 937931
+    }
+  },
+  {
+    "id": "tkp_gen_92",
+    "name": "TKPカンファレンスセンターNagoyaWEST",
+    "rarity": "R",
+    "type": "conference",
+    "capacity": 31,
+    "location": "Nagoya",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 6,
+      "satisfaction": 10,
+      "sales": 60510
+    }
+  },
+  {
+    "id": "tkp_gen_93",
+    "name": "TKPガーデンシティHiroshima",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 34,
+    "location": "Hiroshima",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 12,
+      "satisfaction": 8,
+      "sales": 130470
+    }
+  },
+  {
+    "id": "tkp_gen_94",
+    "name": "TKPホールFukuoka",
+    "rarity": "SR",
+    "type": "hall",
+    "capacity": 56,
+    "location": "Fukuoka",
+    "image": "/assets/cards/template-SR.png",
+    "stats": {
+      "knowledge": 13,
+      "satisfaction": 13,
+      "sales": 274568
+    }
+  },
+  {
+    "id": "tkp_gen_95",
+    "name": "TKPビジネスセンターTokyo",
+    "rarity": "R",
+    "type": "office",
+    "capacity": 25,
+    "location": "Tokyo",
+    "image": "/assets/cards/template-R.png",
+    "stats": {
+      "knowledge": 7,
+      "satisfaction": 8,
+      "sales": 82843
+    }
+  }
+]

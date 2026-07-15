@@ -1,0 +1,73 @@
+{
+  "act_3": [
+    {
+      "text": "プロジェクターのルーメン数は、何に影響しますか？",
+      "options": ["画面の明るさ", "画面の解像度", "スピーカーの音量"],
+      "correctIndex": 0,
+      "successReward": { "knowledge": 10 },
+      "failureReward": { "knowledge": -5 }
+    },
+    {
+      "text": "「シアター形式」とはどのようなレイアウトですか？",
+      "options": ["机と椅子を並べる", "椅子のみを並べる", "コの字型に並べる"],
+      "correctIndex": 1,
+      "successReward": { "knowledge": 10 },
+      "failureReward": { "knowledge": -5 }
+    },
+    {
+      "text": "「原状回復」とはどういう意味ですか？",
+      "options": ["会場の備品を新しくする", "入室時と同じ状態に戻す", "掃除を業者に頼む"],
+      "correctIndex": 1,
+      "successReward": { "knowledge": 10 },
+      "failureReward": { "knowledge": -5 }
+    }
+  ],
+  "act_4": [
+    {
+      "text": "お客様から「見積もりが高い」と言われました。どう対応しますか？",
+      "options": ["すぐに値引きする", "価値やメリットを再説明する", "他社を勧める"],
+      "correctIndex": 1,
+      "successReward": { "reputation": 5, "knowledge": 5 },
+      "failureReward": { "reputation": -5 }
+    },
+    {
+      "text": "予約確定前に他のお客様から同じ日程で問い合わせがありました。どうしますか？",
+      "options": ["後から来たお客様を断る", "仮押さえ期限を確認し調整する", "早い者勝ちで決める"],
+      "correctIndex": 1,
+      "successReward": { "reputation": 5, "knowledge": 5 },
+      "failureReward": { "reputation": -5 }
+    }
+  ],
+  "act_1": [
+    {
+      "text": "商談の冒頭で最も重要なことは何ですか？",
+      "options": ["すぐに価格を提示する", "自社の自慢話をする", "アイスブレイクとヒアリング"],
+      "correctIndex": 2,
+      "successReward": { "satisfaction": 10, "money": 10000 },
+      "failureReward": { "satisfaction": -10 }
+    },
+    {
+      "text": "お客様の要望がフワッとしている時、どう提案しますか？",
+      "options": ["適当なプランを1つ出す", "目的を深堀りし、複数プランを提示", "お客様が決めるまで待つ"],
+      "correctIndex": 1,
+      "successReward": { "satisfaction": 10, "money": 10000 },
+      "failureReward": { "satisfaction": -10 }
+    }
+  ],
+  "act_6": [
+    {
+      "text": "Routing（巡回業務）中に気をつけるべきことは？",
+      "options": ["挨拶と会場の清掃状況の確認", "なるべく早く終わらせる", "スマホを見ながら歩く"],
+      "correctIndex": 0,
+      "successReward": { "stamina": 10 },
+      "failureReward": { "stamina": -10 }
+    },
+    {
+      "text": "会場の空調が効いていないとお客様から言われました。",
+      "options": ["自分で直そうとする", "設定を確認し、必要なら施設管理へ連絡", "我慢してもらう"],
+      "correctIndex": 1,
+      "successReward": { "stamina": 10 },
+      "failureReward": { "stamina": -10 }
+    }
+  ]
+}

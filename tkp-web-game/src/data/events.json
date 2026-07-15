@@ -1,0 +1,117 @@
+{
+  "weeklyEvents": [
+    {
+      "id": "week1_event",
+      "title": "A社からの依頼 (東京)",
+      "description": "「20名程度の役員会議。東京駅から近く、落ち着いた雰囲気で、見学時に高級感も伝えたい」とのこと。最適な会場を提案してください。",
+      "options": [
+        {
+          "cardId": "tkp_kyobashi_r",
+          "success": true,
+          "feedback": "正解。京橋ならアクセスと雰囲気の両方を説明できる。仮予約成立だ！",
+          "reward": { "money": 120000, "knowledge": 4, "satisfaction": 10, "reputation": 3 }
+        },
+        {
+          "cardId": "tkp_hakata_sr",
+          "success": false,
+          "feedback": "博多は九州案件で光る。営業は『今回のお客様に合う会場』を選ぶ仕事だ。",
+          "reward": { "money": -100000, "stamina": -10 }
+        }
+      ]
+    },
+    {
+      "id": "week2_event",
+      "title": "大型研修の提案 (大阪)",
+      "description": "全国から集まる大型研修案件。関西で200名規模の重要なセミナーを開催したい。高級感のある会場が必要です。",
+      "options": [
+        {
+          "cardId": "tkp_osaka_ssr",
+          "success": true,
+          "feedback": "大成功！PREMIUMな空間で、大型研修と懇親会を同時に行えます！",
+          "reward": { "money": 300000, "knowledge": 8, "satisfaction": 15, "reputation": 5 }
+        },
+        {
+          "cardId": "tkp_kyobashi_r",
+          "success": false,
+          "feedback": "20名規模の会場では、200名の研修は入りきりません。人数の確認が必須です。",
+          "reward": { "money": -100000, "stamina": -15 }
+        }
+      ]
+    },
+    {
+      "id": "week3_event",
+      "title": "九州での表彰式 (博多)",
+      "description": "博多駅圏で、表彰式・懇親会・分科会を組み合わせる提案が求められています。",
+      "options": [
+        {
+          "cardId": "tkp_hakata_sr",
+          "success": true,
+          "feedback": "素晴らしい！博多駅圏という場所条件と、ホール＋別室の組み合わせがポイントだ。",
+          "reward": { "money": 200000, "knowledge": 6, "satisfaction": 12, "reputation": 4 }
+        },
+        {
+          "cardId": "tkp_osaka_ssr",
+          "success": false,
+          "feedback": "大阪梅田は関西の大型研修で使ったカードだ。今回は九州の案件です。",
+          "reward": { "money": -100000, "stamina": -20 }
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Q1: 『TKPガーデンシティPREMIUM京橋』の特徴として正しいものは？",
+      "options": [
+        "博多駅圏にあり、宿泊研修を中心に使う",
+        "京橋駅直結で、東京駅からもアクセスしやすい",
+        "大阪駅直結で、関西の大型研修専用である"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "Q2: 博多駅圏で、表彰式・懇親会・分科会を組み合わせる提案に使ったカードは？",
+      "options": [
+        "R 京橋 + SR 京橋カンファレンス",
+        "SSR 大阪梅田のみ",
+        "SR 博多住吉ホール + R 博多住吉研修ルーム"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "question": "Q3: 120名の新人研修後に懇親会も行いたい。最も確認すべき組み合わせは？",
+      "options": [
+        "収容人数・研修レイアウト・音響映像・懇親会転換",
+        "施設名の響きとカードのレア度だけ",
+        "最寄駅を見ず、最も高額な会場を選ぶ"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "question": "Q4: 大型研修の本番前、会場運営リーダーへ派遣する確認任務として適切なのは？",
+      "options": [
+        "売上順位だけを確認する",
+        "レイアウト・備品・マイク・受付導線・Wi-Fiを確認",
+        "現場確認をせず、カード画像だけを送る"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "Q5: Demoで採用する標準的な予約の流れとして正しい順番は？",
+      "options": [
+        "本予約 → お問い合わせ → 仮予約 → 利用当日",
+        "お問い合わせ → 仮予約 → 本予約 → お支払い → 利用当日",
+        "利用当日 → 見積確認 → 仮予約 → お問い合わせ"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "Q6: お問い合わせ時に最初に揃える情報として最も適切なのは？",
+      "options": [
+        "担当者の好きな色とカードのレア度",
+        "希望エリア・日時・人数・用途・レイアウト・予算・備品",
+        "会場名を決めずに本予約だけ先に行う"
+      ],
+      "correctIndex": 1
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tkp-red: #E60012;
+  --color-tkp-red-dark: #cc0010;
+  --color-tkp-blue: #003366;
+  --color-tkp-gold: #D4AF37;
+  --color-tkp-silver: #C0C0C0;
+  --color-tkp-bronze: #CD7F32;
+  
+  --font-sans: 'Inter', 'Noto Sans JP', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply m-0 p-0 overflow-hidden bg-gray-900 text-white font-sans;
+    /* Ensure the body prevents scrolling on mobile/touch */
+    touch-action: none;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  .glass-panel-dark {
+    @apply bg-black/40 backdrop-blur-md border border-white/10 shadow-2xl;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .text-shadow-glow {
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Base App container scaling */
+#root {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #0f172a; /* slate-900 */
+}
+
+/* This is the 1920x1080 container */
+.game-container {
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  background-color: #1e293b; /* slate-800 */
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  /* The scaling will be handled by React inline styles based on window size */
+  transform-origin: center center;
+}
