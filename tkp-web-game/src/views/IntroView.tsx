@@ -66,6 +66,16 @@ export default function IntroView({ onComplete }: { onComplete: () => void }) {
     proceedNext();
   };
 
+  const handleSkip = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    const firstAcquireIndex = INTRO_SCENES.findIndex((s, idx) => idx >= sceneIndex && s.acquireCards);
+    if (firstAcquireIndex !== -1) {
+      setSceneIndex(firstAcquireIndex);
+    } else {
+      onComplete();
+    }
+  };
+
   return (
     <div className="absolute inset-0 bg-black flex flex-col items-center justify-center cursor-pointer overflow-hidden" onClick={handleNext}>
       {/* Background */}
@@ -135,7 +145,7 @@ export default function IntroView({ onComplete }: { onComplete: () => void }) {
       </div>
 
       <button 
-        onClick={(e) => { e.stopPropagation(); onComplete(); }}
+        onClick={handleSkip}
         className="absolute top-8 right-8 px-6 py-2 glass-panel text-white text-xl rounded-full hover:bg-white/20 transition-colors z-40"
       >
         スキップ

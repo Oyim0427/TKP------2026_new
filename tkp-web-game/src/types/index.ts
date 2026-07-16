@@ -28,7 +28,7 @@ export interface PlayerState {
   scheduledCases: number[];
   collectedCards: string[]; // Array of card IDs
   schedule: Record<number, string>; // dayIndex (0-4) -> charId
-  gameStage: 'title' | 'intro' | 'schedule' | 'execution' | 'event' | 'quiz' | 'summary' | 'award' | 'end';
+  gameStage: 'title' | 'intro' | 'schedule' | 'execution' | 'event' | 'quiz' | 'summary' | 'award' | 'end' | 'special_event';
 }
 
 export interface Option {

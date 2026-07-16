@@ -9,27 +9,27 @@ import cardsData from '../data/cards.json';
 const DAYS = ['月', '火', '水', '木', '金'];
 const CHARACTERS: Record<string, { img: string, name: string, stats: any }> = {
   'act_1': { 
-    img: '/assets/chars/client/normal-man.png', name: '商談する', 
+    img: 'consultation', name: '商談する', 
     stats: { money: 0, stamina: -15, knowledge: 5, reputation: 2 } 
   },
   'act_2': { 
-    img: '/assets/chars/client/normal-woman.png', name: '既存顧客をフォロー', 
+    img: 'follow-up', name: '既存顧客をフォロー', 
     stats: { money: 20000, stamina: -10, knowledge: 2, reputation: 1 } 
   },
   'act_3': { 
-    img: '/assets/chars/ops/normal.png', name: '施設知識を学ぶ', 
+    img: 'learning', name: '施設知識を学ぶ', 
     stats: { money: 0, stamina: -5, knowledge: 10, reputation: 0 } 
   },
   'act_4': { 
-    img: '/assets/chars/senpai/normal-woman.png', name: '先輩に相談する', 
+    img: 'advice', name: '先輩に相談する', 
     stats: { money: 0, stamina: -5, knowledge: 8, reputation: 3 } 
   },
   'act_5': { 
-    img: '/assets/chars/boss/normal-man.png', name: '案件を進める', 
+    img: 'project', name: '案件を進める', 
     stats: { money: 100000, stamina: -20, knowledge: 0, reputation: 5 } 
   },
   'act_6': { 
-    img: 'player', name: 'Routing 業務', 
+    img: 'route', name: 'Routing 業務', 
     stats: { money: 0, stamina: 20, knowledge: 1, reputation: 0 } 
   },
 };
@@ -44,6 +44,26 @@ const ACTION_CGS = [
 
 export default function ExecutionView({ onWeekComplete }: { onWeekComplete: () => void }) {
   const { state, updateState } = useGameState();
+
+  const getCharImg = (img: string) => {
+    const gender = state.playerGender;
+    switch (img) {
+      case 'consultation':
+        return `/assets/task_icon/${gender}/client-consultation-transparent.png`;
+      case 'follow-up':
+        return `/assets/task_icon/${gender}/phone-follow-up-transparent.png`;
+      case 'learning':
+        return `/assets/task_icon/${gender}/venue-layout-review-transparent.png`;
+      case 'advice':
+        return `/assets/task_icon/${gender}/senior-advice-transparent.png`;
+      case 'project':
+        return `/assets/task_icon/${gender}/project-progress-transparent.png`;
+      case 'route':
+        return `/assets/task_icon/${gender}/route-planning-transparent.png`;
+      default:
+        return img;
+    }
+  };
   const [dayIndex, setDayIndex] = useState(0);
   const [showStats, setShowStats] = useState(false);
   const [pendingEvent, setPendingEvent] = useState(false);
@@ -105,9 +125,13 @@ export default function ExecutionView({ onWeekComplete }: { onWeekComplete: () =
         // We only add money here if it's not act_5, because act_5 money comes from EventModal
         let moneyGained = charId === 'act_5' ? 0 : stats.money;
         
-        // Randomize act_2 money to be between 10,000 and 50,000
+        // Randomize act_2 money to be between 10,000 and 50,000 with a 1/3 probability
         if (charId === 'act_2') {
-          moneyGained = Math.floor(Math.random() * 40000) + 10000;
+          if (Math.random() < 1 / 3) {
+            moneyGained = Math.floor(Math.random() * 40000) + 10000;
+          } else {
+            moneyGained = 0;
+          }
         }
 
         updateState({ 
@@ -198,7 +222,7 @@ export default function ExecutionView({ onWeekComplete }: { onWeekComplete: () =
             className="absolute bottom-[5%] left-[20%] w-[600px] h-[85%] flex items-end justify-center drop-shadow-2xl"
           >
             <img 
-              src={char.img === 'player' ? `/assets/chars/player/normal-${state.playerGender}.png` : char.img} 
+              src={getCharImg(char.img)} 
               alt={char.name} 
               className="max-h-full object-contain"
             />

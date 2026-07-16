@@ -8,6 +8,7 @@ import SummaryView from './views/SummaryView';
 import AwardView from './views/AwardView';
 import MenuView from './components/MenuView';
 import QuizView from './views/QuizView';
+import SpecialEventView from './views/SpecialEventView';
 import { Menu } from 'lucide-react';
 
 function App() {
@@ -59,6 +60,8 @@ function App() {
             onNext={() => {
               if (state.currentWeek >= 12) {
                 updateState({ gameStage: 'award' });
+              } else if (state.currentWeek === 4 || state.currentWeek === 8) {
+                updateState({ gameStage: 'special_event' });
               } else {
                 updateState({ 
                   gameStage: 'schedule', 
@@ -67,6 +70,24 @@ function App() {
                 });
               }
             }} 
+          />
+        )}
+
+        {state.gameStage === 'special_event' && (
+          <SpecialEventView 
+            onComplete={(rewards) => {
+              const newCards = [...state.collectedCards];
+              if (rewards.cardId && !newCards.includes(rewards.cardId)) {
+                newCards.push(rewards.cardId);
+              }
+              updateState({
+                gameStage: 'schedule',
+                currentWeek: state.currentWeek + 1,
+                schedule: {},
+                money: state.money + rewards.money,
+                collectedCards: newCards
+              });
+            }}
           />
         )}
 

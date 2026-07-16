@@ -4,18 +4,38 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Users, Briefcase, Plus, X } from 'lucide-react';
 
 const CHARACTERS = [
-  { id: 'act_1', name: '商談する', img: '/assets/chars/client/normal-man.png', color: 'bg-blue-500', stamina: -15 },
-  { id: 'act_2', name: '既存顧客をフォロー', img: '/assets/chars/client/normal-woman.png', color: 'bg-green-500', stamina: -10 },
-  { id: 'act_3', name: '施設知識を学ぶ', img: '/assets/chars/ops/normal.png', color: 'bg-purple-500', stamina: -5 },
-  { id: 'act_4', name: '先輩に相談する', img: '/assets/chars/senpai/normal-woman.png', color: 'bg-pink-500', stamina: -5 },
-  { id: 'act_5', name: '案件を進める', img: '/assets/chars/boss/normal-man.png', color: 'bg-red-500', stamina: -20 },
-  { id: 'act_6', name: 'Routing 業務', img: 'player', color: 'bg-teal-500', stamina: 20 },
+  { id: 'act_1', name: '商談する', img: 'consultation', color: 'bg-blue-500', stamina: -15 },
+  { id: 'act_2', name: '既存顧客をフォロー', img: 'follow-up', color: 'bg-green-500', stamina: -10 },
+  { id: 'act_3', name: '施設知識を学ぶ', img: 'learning', color: 'bg-purple-500', stamina: -5 },
+  { id: 'act_4', name: '先輩に相談する', img: 'advice', color: 'bg-pink-500', stamina: -5 },
+  { id: 'act_5', name: '案件を進める', img: 'project', color: 'bg-red-500', stamina: -20 },
+  { id: 'act_6', name: 'Routing 業務', img: 'route', color: 'bg-teal-500', stamina: 20 },
 ];
 
 const DAYS = ['月', '火', '水', '木', '金'];
 
 export default function ScheduleView({ onExecute }: { onExecute: () => void }) {
   const { state, updateState } = useGameState();
+
+  const getCharImg = (img: string) => {
+    const gender = state.playerGender;
+    switch (img) {
+      case 'consultation':
+        return `/assets/task_icon/${gender}/client-consultation-transparent.png`;
+      case 'follow-up':
+        return `/assets/task_icon/${gender}/phone-follow-up-transparent.png`;
+      case 'learning':
+        return `/assets/task_icon/${gender}/venue-layout-review-transparent.png`;
+      case 'advice':
+        return `/assets/task_icon/${gender}/senior-advice-transparent.png`;
+      case 'project':
+        return `/assets/task_icon/${gender}/project-progress-transparent.png`;
+      case 'route':
+        return `/assets/task_icon/${gender}/route-planning-transparent.png`;
+      default:
+        return img;
+    }
+  };
   const [localSchedule, setLocalSchedule] = useState<Record<number, string>>(state.schedule || {});
   
   // Track which day is currently being edited (null if no day is selected)
@@ -141,7 +161,7 @@ export default function ScheduleView({ onExecute }: { onExecute: () => void }) {
                         <div className="text-gray-300 text-sm mb-4">09:00 - 18:00 (終日)</div>
                         <div className="flex-1 relative flex items-end justify-center">
                           <img 
-                            src={char.img === 'player' ? `/assets/chars/player/normal-${state.playerGender}.png` : char.img} 
+                            src={getCharImg(char.img)} 
                             alt={char.name} 
                             className="h-full object-contain filter drop-shadow-lg" 
                           />
@@ -224,7 +244,7 @@ export default function ScheduleView({ onExecute }: { onExecute: () => void }) {
                     >
                       <div className={`w-full h-48 rounded-lg mb-4 flex items-end justify-center overflow-hidden bg-gradient-to-t from-[#1a1a1a] to-transparent relative`}>
                         <img 
-                          src={char.img === 'player' ? `/assets/chars/player/normal-${state.playerGender}.png` : char.img} 
+                          src={getCharImg(char.img)} 
                           alt={char.name} 
                           className={`h-full object-contain transition-transform duration-300 ${!isDisabled && 'group-hover:scale-110'}`} 
                         />
