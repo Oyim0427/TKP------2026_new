@@ -10,12 +10,14 @@ import MenuView from './components/MenuView';
 import QuizView from './views/QuizView';
 import SpecialEventView from './views/SpecialEventView';
 import { Menu, Save } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 function App() {
   const { state, updateState, resetGame, newGame, continueGame, hasSave } = useGameState();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSavedText, setIsSavedText] = useState(false);
   const [scale, setScale] = useState(1);
+  const [isPortraitPrompt, setIsPortraitPrompt] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -27,6 +29,23 @@ function App() {
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    const handleOrientation = () => {
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
+                       (window.innerWidth <= 1024 && 'ontouchstart' in window);
+      const isPortrait = window.innerHeight > window.innerWidth;
+      setIsPortraitPrompt(isMobile && isPortrait);
+    };
+
+    handleOrientation();
+    window.addEventListener('resize', handleOrientation);
+    window.addEventListener('orientationchange', handleOrientation);
+    return () => {
+      window.removeEventListener('resize', handleOrientation);
+      window.removeEventListener('orientationchange', handleOrientation);
+    };
   }, []);
 
   return (
@@ -158,6 +177,29 @@ function App() {
 
         {/* Overlay Menu */}
         <MenuView isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+
+        {/* Mobile Orientation Warning Overlay */}
+        {isPortraitPrompt && (
+          <div className="fixed inset-0 bg-[#0f172a] z-[9999] flex flex-col items-center justify-center text-white px-8 text-center pointer-events-auto">
+            {/* Phone Rotate Animation */}
+            <motion.div
+              animate={{ rotate: [0, -90, -90, 0] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", repeatDelay: 0.5 }}
+              className="w-20 h-32 border-4 border-white rounded-2xl flex items-center justify-center mb-8 relative"
+            >
+              <div className="w-10 h-1 bg-white absolute top-2 rounded-full" />
+              <div className="w-3 h-3 border-2 border-white rounded-full absolute bottom-2" />
+              <div className="text-2xl">🔄</div>
+            </motion.div>
+            
+            <h2 className="text-4xl font-extrabold mb-4 tracking-wider text-tkp-gold animate-pulse">
+              画面を横向きにしてください
+            </h2>
+            <p className="text-2xl text-gray-300 leading-relaxed max-w-[500px]">
+              本ゲームは横画面（ランドスケープ表示）に最適化されています。端末を横向きに回転させてプレイしてください。
+            </p>
+          </div>
+        )}
       </div>
     </>
   );
