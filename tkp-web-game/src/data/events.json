@@ -4,58 +4,43 @@
       "id": "week1_event",
       "title": "A社からの依頼 (東京)",
       "description": "「20名程度の役員会議。東京駅から近く、落ち着いた雰囲気で、見学時に高級感も伝えたい」とのこと。最適な会場を提案してください。",
-      "options": [
-        {
-          "cardId": "tkp_kyobashi_r",
-          "success": true,
-          "feedback": "正解。京橋ならアクセスと雰囲気の両方を説明できる。仮予約成立だ！",
-          "reward": { "money": 120000, "knowledge": 4, "satisfaction": 10, "reputation": 3 }
-        },
-        {
-          "cardId": "tkp_hakata_sr",
-          "success": false,
-          "feedback": "博多は九州案件で光る。営業は『今回のお客様に合う会場』を選ぶ仕事だ。",
-          "reward": { "money": -100000, "stamina": -10 }
-        }
-      ]
+      "requirements": {
+        "location": "Tokyo",
+        "minCapacity": 20,
+        "keywords": ["premium"]
+      },
+      "successFeedback": "正解！東京駅近くの高級感ある会場で、人数規模にもピッタリな提案です。仮予約が成立しました！",
+      "failureFeedback": "残念。提案された会場は要件（東京、20名規模、高級感）を満たしていません。営業は『お客様のニーズに合う会場』を選ぶ仕事です。",
+      "successReward": { "money": 120000, "knowledge": 4, "satisfaction": 10, "reputation": 3 },
+      "failureReward": { "money": -100000, "stamina": -10 }
     },
     {
       "id": "week2_event",
       "title": "大型研修の提案 (大阪)",
       "description": "全国から集まる大型研修案件。関西で200名規模の重要なセミナーを開催したい。高級感のある会場が必要です。",
-      "options": [
-        {
-          "cardId": "tkp_osaka_ssr",
-          "success": true,
-          "feedback": "大成功！PREMIUMな空間で、大型研修と懇親会を同時に行えます！",
-          "reward": { "money": 300000, "knowledge": 8, "satisfaction": 15, "reputation": 5 }
-        },
-        {
-          "cardId": "tkp_kyobashi_r",
-          "success": false,
-          "feedback": "20名規模の会場では、200名の研修は入りきりません。人数の確認が必須です。",
-          "reward": { "money": -100000, "stamina": -15 }
-        }
-      ]
+      "requirements": {
+        "location": "Osaka",
+        "minCapacity": 200,
+        "keywords": ["premium"]
+      },
+      "successFeedback": "大成功！大阪梅田のPREMIUMな空間で、大型研修と懇親会を同時に行えます！",
+      "failureFeedback": "提案された会場は要件（大阪、200名規模、高級感）を満たしていません。特に人数分の座席が確保できるかの確認が必須です。",
+      "successReward": { "money": 300000, "knowledge": 8, "satisfaction": 15, "reputation": 5 },
+      "failureReward": { "money": -100000, "stamina": -15 }
     },
     {
       "id": "week3_event",
       "title": "九州での表彰式 (博多)",
       "description": "博多駅圏で、表彰式・懇親会・分科会を組み合わせる提案が求められています。",
-      "options": [
-        {
-          "cardId": "tkp_hakata_sr",
-          "success": true,
-          "feedback": "素晴らしい！博多駅圏という場所条件と、ホール＋別室の組み合わせがポイントだ。",
-          "reward": { "money": 200000, "knowledge": 6, "satisfaction": 12, "reputation": 4 }
-        },
-        {
-          "cardId": "tkp_osaka_ssr",
-          "success": false,
-          "feedback": "大阪梅田は関西の大型研修で使ったカードだ。今回は九州の案件です。",
-          "reward": { "money": -100000, "stamina": -20 }
-        }
-      ]
+      "requirements": {
+        "location": "Fukuoka",
+        "minCapacity": 100,
+        "keywords": ["hall"]
+      },
+      "successFeedback": "素晴らしい！博多駅圏という場所条件と、ホール＋別室の組み合わせがポイントです。成約しました！",
+      "failureFeedback": "提案された会場は要件（福岡、100名規模、ホール設備）を満たしていません。博多周辺のイベントに対応できる会場を選びましょう。",
+      "successReward": { "money": 200000, "knowledge": 6, "satisfaction": 12, "reputation": 4 },
+      "failureReward": { "money": -100000, "stamina": -20 }
     }
   ],
   "quiz": [

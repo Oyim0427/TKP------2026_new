@@ -70,6 +70,25 @@ export default function ExecutionView({ onWeekComplete }: { onWeekComplete: () =
   const [pendingCard, setPendingCard] = useState<string | null>(null);
   const [pendingQuestion, setPendingQuestion] = useState<string | null>(null);
 
+  const [dailyMoneyGained] = useState<number[]>(() => {
+    return Array.from({ length: 5 }, (_, i) => {
+      const charId = state.schedule[i] || 'act_1';
+      const charInfo = CHARACTERS[charId] || CHARACTERS['act_1'];
+      if (charId === 'act_5') return 0;
+      if (charId === 'act_2') {
+        return Math.random() < 1 / 3 
+          ? Math.floor(Math.random() * 40000) + 10000 
+          : 0;
+      }
+      return charInfo.stats.money;
+    });
+  });
+
+  // Reset stats popup when day changes
+  useEffect(() => {
+    setShowStats(false);
+  }, [dayIndex]);
+
   useEffect(() => {
     // Process scheduled cases that mature this week
     const casesToActivate = state.scheduledCases.filter(w => w <= state.currentWeek);
@@ -122,17 +141,8 @@ export default function ExecutionView({ onWeekComplete }: { onWeekComplete: () =
           if (Math.random() < 0.2) triggeredQuestion = true;
         }
 
-        // We only add money here if it's not act_5, because act_5 money comes from EventModal
-        let moneyGained = charId === 'act_5' ? 0 : stats.money;
-        
-        // Randomize act_2 money to be between 10,000 and 50,000 with a 1/3 probability
-        if (charId === 'act_2') {
-          if (Math.random() < 1 / 3) {
-            moneyGained = Math.floor(Math.random() * 40000) + 10000;
-          } else {
-            moneyGained = 0;
-          }
-        }
+        // Use the pre-calculated money gained for this day
+        const moneyGained = dailyMoneyGained[dayIndex];
 
         updateState({ 
           money: state.money + moneyGained, 
@@ -170,7 +180,7 @@ export default function ExecutionView({ onWeekComplete }: { onWeekComplete: () =
     }
 
     return () => clearTimeout(timer);
-  }, [dayIndex, pendingEvent, pendingCard, pendingQuestion, state.schedule, state.money, state.stamina, state.knowledge, state.satisfaction, state.reputation, state.collectedCards, updateState, onWeekComplete]);
+  }, [dayIndex, pendingEvent, pendingCard, pendingQuestion, state.schedule, state.money, state.stamina, state.knowledge, state.satisfaction, state.reputation, state.collectedCards, updateState, onWeekComplete, dailyMoneyGained]);
 
   const handleEventComplete = () => {
     setPendingEvent(false);
@@ -252,7 +262,11 @@ export default function ExecutionView({ onWeekComplete }: { onWeekComplete: () =
                 className="absolute top-1/2 right-[15%] glass-panel-dark px-8 py-6 rounded-2xl flex flex-col gap-3 text-3xl font-bold shadow-2xl shadow-tkp-blue/50"
               >
                 {charId === 'act_5' && <span className="text-white">案件進行中...</span>}
-                {charId !== 'act_5' && stats.money > 0 && <span className="text-green-400">+¥{stats.money.toLocaleString()}</span>}
+                {charId !== 'act_5' && (charId === 'act_2' ? dailyMoneyGained[dayIndex] > 0 : stats.money > 0) && (
+                  <span className="text-green-400">
+                    +¥{(charId === 'act_2' ? dailyMoneyGained[dayIndex] : stats.money).toLocaleString()}
+                  </span>
+                )}
                 {stats.knowledge > 0 && <span className="text-blue-400">知識 +{stats.knowledge}</span>}
                 {stats.stamina > 0 && <span className="text-teal-400">体力 +{stats.stamina}</span>}
                 {stats.stamina < 0 && <span className="text-red-400">体力 {stats.stamina}</span>}

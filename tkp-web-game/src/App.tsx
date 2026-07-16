@@ -9,11 +9,12 @@ import AwardView from './views/AwardView';
 import MenuView from './components/MenuView';
 import QuizView from './views/QuizView';
 import SpecialEventView from './views/SpecialEventView';
-import { Menu } from 'lucide-react';
+import { Menu, Save } from 'lucide-react';
 
 function App() {
   const { state, updateState, resetGame, newGame, continueGame, hasSave } = useGameState();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSavedText, setIsSavedText] = useState(false);
   const [scale, setScale] = useState(1);
 
   useEffect(() => {
@@ -129,9 +130,28 @@ function App() {
               </span>
               <span className="text-blue-400 drop-shadow-md">📚 知識: {state.knowledge}</span>
             </div>
-            <div className="flex items-center gap-3 font-bold text-lg text-gray-300 group-hover:text-white bg-white/5 px-6 py-2 rounded-full border border-white/10 group-hover:border-white/30 transition-all">
-              <Menu size={20} />
-              <span>ステータス詳細を開く</span>
+            <div className="flex items-center gap-4">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  localStorage.setItem('tkp_master_save', JSON.stringify(state));
+                  setIsSavedText(true);
+                  setTimeout(() => setIsSavedText(false), 2000);
+                }}
+                className={`flex items-center gap-3 font-bold text-lg px-6 py-2 rounded-full border transition-all pointer-events-auto ${
+                  isSavedText 
+                    ? 'bg-green-600 text-white border-green-500 shadow-md shadow-green-600/30' 
+                    : 'bg-white/5 text-gray-300 hover:text-white border-white/10 hover:border-white/30 hover:bg-white/10'
+                }`}
+              >
+                <Save size={20} />
+                <span>{isSavedText ? '保存完了！' : 'セーブ'}</span>
+              </button>
+
+              <div className="flex items-center gap-3 font-bold text-lg text-gray-300 group-hover:text-white bg-white/5 px-6 py-2 rounded-full border border-white/10 group-hover:border-white/30 transition-all">
+                <Menu size={20} />
+                <span>ステータス詳細を開く</span>
+              </div>
             </div>
           </div>
         )}

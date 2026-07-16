@@ -10,7 +10,19 @@
     "stats": {
       "knowledge": 10,
       "satisfaction": 8
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_hakata_sr",
@@ -23,7 +35,19 @@
     "stats": {
       "knowledge": 14,
       "sales": 320000
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "hall",
+      "ホール",
+      "大型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_kyobashi_r",
@@ -36,7 +60,16 @@
     "stats": {
       "knowledge": 8,
       "sales": 120000
-    }
+    },
+    "keywords": [
+      "Tokyo",
+      "tokyo",
+      "東京",
+      "premium",
+      "高級感",
+      "gc-premium",
+      "R"
+    ]
   },
   {
     "id": "tkp_kyobashi_sr",
@@ -49,7 +82,16 @@
     "stats": {
       "proposal": 12,
       "satisfaction": 10
-    }
+    },
+    "keywords": [
+      "Tokyo",
+      "tokyo",
+      "東京",
+      "conference",
+      "会議室",
+      "中型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_osaka_ssr",
@@ -62,7 +104,16 @@
     "stats": {
       "proposal": 18,
       "sales": 500000
-    }
+    },
+    "keywords": [
+      "Osaka",
+      "osaka",
+      "大阪",
+      "premium",
+      "高級感",
+      "gc-premium",
+      "SSR"
+    ]
   },
   {
     "id": "tkp_gen_1",
@@ -76,7 +127,16 @@
       "knowledge": 14,
       "satisfaction": 12,
       "sales": 81454
-    }
+    },
+    "keywords": [
+      "Hiroshima",
+      "hiroshima",
+      "広島",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_2",
@@ -90,7 +150,19 @@
       "knowledge": 12,
       "satisfaction": 13,
       "sales": 105529
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_3",
@@ -104,7 +176,16 @@
       "knowledge": 38,
       "satisfaction": 50,
       "sales": 768785
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "SSR"
+    ]
   },
   {
     "id": "tkp_gen_4",
@@ -118,7 +199,16 @@
       "knowledge": 14,
       "satisfaction": 8,
       "sales": 139913
-    }
+    },
+    "keywords": [
+      "Sendai",
+      "sendai",
+      "仙台",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_5",
@@ -132,7 +222,16 @@
       "knowledge": 24,
       "satisfaction": 26,
       "sales": 328782
-    }
+    },
+    "keywords": [
+      "Nagoya",
+      "nagoya",
+      "名古屋",
+      "hall",
+      "ホール",
+      "大型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_6",
@@ -146,7 +245,16 @@
       "knowledge": 14,
       "satisfaction": 12,
       "sales": 124576
-    }
+    },
+    "keywords": [
+      "Hiroshima",
+      "hiroshima",
+      "広島",
+      "hall",
+      "ホール",
+      "大型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_7",
@@ -160,7 +268,16 @@
       "knowledge": 7,
       "satisfaction": 13,
       "sales": 120783
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_8",
@@ -174,7 +291,16 @@
       "knowledge": 12,
       "satisfaction": 13,
       "sales": 70650
-    }
+    },
+    "keywords": [
+      "Kobe",
+      "kobe",
+      "神戸",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_9",
@@ -188,7 +314,16 @@
       "knowledge": 19,
       "satisfaction": 20,
       "sales": 196885
-    }
+    },
+    "keywords": [
+      "Nagoya",
+      "nagoya",
+      "名古屋",
+      "office",
+      "オフィス",
+      "小型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_10",
@@ -202,7 +337,19 @@
       "knowledge": 13,
       "satisfaction": 8,
       "sales": 72791
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_11",
@@ -216,7 +363,16 @@
       "knowledge": 8,
       "satisfaction": 10,
       "sales": 135035
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_12",
@@ -230,7 +386,16 @@
       "knowledge": 10,
       "satisfaction": 8,
       "sales": 81296
-    }
+    },
+    "keywords": [
+      "Tokyo",
+      "tokyo",
+      "東京",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_13",
@@ -244,7 +409,16 @@
       "knowledge": 27,
       "satisfaction": 23,
       "sales": 186727
-    }
+    },
+    "keywords": [
+      "Osaka",
+      "osaka",
+      "大阪",
+      "office",
+      "オフィス",
+      "小型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_14",
@@ -258,7 +432,16 @@
       "knowledge": 11,
       "satisfaction": 8,
       "sales": 108633
-    }
+    },
+    "keywords": [
+      "Nagoya",
+      "nagoya",
+      "名古屋",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_15",
@@ -272,7 +455,16 @@
       "knowledge": 13,
       "satisfaction": 13,
       "sales": 123005
-    }
+    },
+    "keywords": [
+      "Osaka",
+      "osaka",
+      "大阪",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_16",
@@ -286,7 +478,16 @@
       "knowledge": 10,
       "satisfaction": 13,
       "sales": 91545
-    }
+    },
+    "keywords": [
+      "Kobe",
+      "kobe",
+      "神戸",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_17",
@@ -300,7 +501,16 @@
       "knowledge": 12,
       "satisfaction": 14,
       "sales": 50065
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_18",
@@ -314,7 +524,19 @@
       "knowledge": 13,
       "satisfaction": 6,
       "sales": 133494
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "hall",
+      "ホール",
+      "大型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_19",
@@ -328,7 +550,16 @@
       "knowledge": 6,
       "satisfaction": 7,
       "sales": 50523
-    }
+    },
+    "keywords": [
+      "Sendai",
+      "sendai",
+      "仙台",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_20",
@@ -342,7 +573,16 @@
       "knowledge": 7,
       "satisfaction": 9,
       "sales": 132066
-    }
+    },
+    "keywords": [
+      "Kobe",
+      "kobe",
+      "神戸",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_21",
@@ -356,7 +596,16 @@
       "knowledge": 29,
       "satisfaction": 27,
       "sales": 152482
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_22",
@@ -370,7 +619,16 @@
       "knowledge": 16,
       "satisfaction": 27,
       "sales": 237718
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "conference",
+      "会議室",
+      "中型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_23",
@@ -384,7 +642,16 @@
       "knowledge": 10,
       "satisfaction": 10,
       "sales": 82732
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_24",
@@ -398,7 +665,16 @@
       "knowledge": 12,
       "satisfaction": 5,
       "sales": 68979
-    }
+    },
+    "keywords": [
+      "Nagoya",
+      "nagoya",
+      "名古屋",
+      "hall",
+      "ホール",
+      "大型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_25",
@@ -412,7 +688,16 @@
       "knowledge": 10,
       "satisfaction": 10,
       "sales": 56578
-    }
+    },
+    "keywords": [
+      "Tokyo",
+      "tokyo",
+      "東京",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_26",
@@ -426,7 +711,16 @@
       "knowledge": 9,
       "satisfaction": 6,
       "sales": 127520
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_27",
@@ -440,7 +734,16 @@
       "knowledge": 13,
       "satisfaction": 6,
       "sales": 130266
-    }
+    },
+    "keywords": [
+      "Tokyo",
+      "tokyo",
+      "東京",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_28",
@@ -454,7 +757,16 @@
       "knowledge": 13,
       "satisfaction": 12,
       "sales": 84155
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_29",
@@ -468,7 +780,16 @@
       "knowledge": 8,
       "satisfaction": 13,
       "sales": 149243
-    }
+    },
+    "keywords": [
+      "Nagoya",
+      "nagoya",
+      "名古屋",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_30",
@@ -482,7 +803,16 @@
       "knowledge": 12,
       "satisfaction": 13,
       "sales": 84676
-    }
+    },
+    "keywords": [
+      "Kobe",
+      "kobe",
+      "神戸",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_31",
@@ -496,7 +826,16 @@
       "knowledge": 5,
       "satisfaction": 5,
       "sales": 75731
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_32",
@@ -510,7 +849,16 @@
       "knowledge": 5,
       "satisfaction": 7,
       "sales": 52204
-    }
+    },
+    "keywords": [
+      "Yokohama",
+      "yokohama",
+      "横浜",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_33",
@@ -524,7 +872,16 @@
       "knowledge": 33,
       "satisfaction": 45,
       "sales": 828630
-    }
+    },
+    "keywords": [
+      "Osaka",
+      "osaka",
+      "大阪",
+      "office",
+      "オフィス",
+      "小型",
+      "SSR"
+    ]
   },
   {
     "id": "tkp_gen_34",
@@ -538,7 +895,16 @@
       "knowledge": 26,
       "satisfaction": 22,
       "sales": 347634
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "office",
+      "オフィス",
+      "小型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_35",
@@ -552,7 +918,16 @@
       "knowledge": 9,
       "satisfaction": 8,
       "sales": 52215
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_36",
@@ -566,7 +941,16 @@
       "knowledge": 12,
       "satisfaction": 7,
       "sales": 97168
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_37",
@@ -580,7 +964,16 @@
       "knowledge": 18,
       "satisfaction": 11,
       "sales": 389914
-    }
+    },
+    "keywords": [
+      "Nagoya",
+      "nagoya",
+      "名古屋",
+      "office",
+      "オフィス",
+      "小型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_38",
@@ -594,7 +987,16 @@
       "knowledge": 21,
       "satisfaction": 40,
       "sales": 567020
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "conference",
+      "会議室",
+      "中型",
+      "SSR"
+    ]
   },
   {
     "id": "tkp_gen_39",
@@ -608,7 +1010,16 @@
       "knowledge": 11,
       "satisfaction": 13,
       "sales": 285775
-    }
+    },
+    "keywords": [
+      "Kobe",
+      "kobe",
+      "神戸",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_40",
@@ -622,7 +1033,16 @@
       "knowledge": 10,
       "satisfaction": 9,
       "sales": 97107
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_41",
@@ -636,7 +1056,16 @@
       "knowledge": 5,
       "satisfaction": 5,
       "sales": 111527
-    }
+    },
+    "keywords": [
+      "Tokyo",
+      "tokyo",
+      "東京",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_42",
@@ -650,7 +1079,16 @@
       "knowledge": 5,
       "satisfaction": 14,
       "sales": 93471
-    }
+    },
+    "keywords": [
+      "Yokohama",
+      "yokohama",
+      "横浜",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_43",
@@ -664,7 +1102,16 @@
       "knowledge": 12,
       "satisfaction": 27,
       "sales": 392527
-    }
+    },
+    "keywords": [
+      "Yokohama",
+      "yokohama",
+      "横浜",
+      "office",
+      "オフィス",
+      "小型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_44",
@@ -678,7 +1125,16 @@
       "knowledge": 11,
       "satisfaction": 7,
       "sales": 137292
-    }
+    },
+    "keywords": [
+      "Kobe",
+      "kobe",
+      "神戸",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_45",
@@ -692,7 +1148,16 @@
       "knowledge": 11,
       "satisfaction": 5,
       "sales": 134344
-    }
+    },
+    "keywords": [
+      "Tokyo",
+      "tokyo",
+      "東京",
+      "hall",
+      "ホール",
+      "大型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_46",
@@ -706,7 +1171,16 @@
       "knowledge": 11,
       "satisfaction": 27,
       "sales": 312770
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "conference",
+      "会議室",
+      "中型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_47",
@@ -720,7 +1194,16 @@
       "knowledge": 8,
       "satisfaction": 11,
       "sales": 55670
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_48",
@@ -734,7 +1217,19 @@
       "knowledge": 10,
       "satisfaction": 13,
       "sales": 55958
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_49",
@@ -748,7 +1243,19 @@
       "knowledge": 8,
       "satisfaction": 7,
       "sales": 107548
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_50",
@@ -762,7 +1269,16 @@
       "knowledge": 31,
       "satisfaction": 27,
       "sales": 552750
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "office",
+      "オフィス",
+      "小型",
+      "SSR"
+    ]
   },
   {
     "id": "tkp_gen_51",
@@ -776,7 +1292,16 @@
       "knowledge": 13,
       "satisfaction": 12,
       "sales": 127034
-    }
+    },
+    "keywords": [
+      "Tokyo",
+      "tokyo",
+      "東京",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_52",
@@ -790,7 +1315,16 @@
       "knowledge": 7,
       "satisfaction": 7,
       "sales": 63399
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_53",
@@ -804,7 +1338,16 @@
       "knowledge": 17,
       "satisfaction": 14,
       "sales": 296860
-    }
+    },
+    "keywords": [
+      "Hiroshima",
+      "hiroshima",
+      "広島",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_54",
@@ -818,7 +1361,16 @@
       "knowledge": 10,
       "satisfaction": 23,
       "sales": 204301
-    }
+    },
+    "keywords": [
+      "Osaka",
+      "osaka",
+      "大阪",
+      "conference",
+      "会議室",
+      "中型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_55",
@@ -832,7 +1384,16 @@
       "knowledge": 11,
       "satisfaction": 19,
       "sales": 449238
-    }
+    },
+    "keywords": [
+      "Hiroshima",
+      "hiroshima",
+      "広島",
+      "conference",
+      "会議室",
+      "中型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_56",
@@ -846,7 +1407,16 @@
       "knowledge": 20,
       "satisfaction": 26,
       "sales": 443706
-    }
+    },
+    "keywords": [
+      "Tokyo",
+      "tokyo",
+      "東京",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_57",
@@ -860,7 +1430,16 @@
       "knowledge": 22,
       "satisfaction": 18,
       "sales": 163966
-    }
+    },
+    "keywords": [
+      "Tokyo",
+      "tokyo",
+      "東京",
+      "conference",
+      "会議室",
+      "中型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_58",
@@ -874,7 +1453,16 @@
       "knowledge": 16,
       "satisfaction": 26,
       "sales": 268267
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "conference",
+      "会議室",
+      "中型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_59",
@@ -888,7 +1476,16 @@
       "knowledge": 7,
       "satisfaction": 14,
       "sales": 56821
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_60",
@@ -902,7 +1499,16 @@
       "knowledge": 6,
       "satisfaction": 10,
       "sales": 99802
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_61",
@@ -916,7 +1522,19 @@
       "knowledge": 6,
       "satisfaction": 7,
       "sales": 104924
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_62",
@@ -930,7 +1548,16 @@
       "knowledge": 10,
       "satisfaction": 11,
       "sales": 103256
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_63",
@@ -944,7 +1571,16 @@
       "knowledge": 10,
       "satisfaction": 6,
       "sales": 85717
-    }
+    },
+    "keywords": [
+      "Yokohama",
+      "yokohama",
+      "横浜",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_64",
@@ -958,7 +1594,16 @@
       "knowledge": 14,
       "satisfaction": 5,
       "sales": 121023
-    }
+    },
+    "keywords": [
+      "Yokohama",
+      "yokohama",
+      "横浜",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_65",
@@ -972,7 +1617,19 @@
       "knowledge": 12,
       "satisfaction": 11,
       "sales": 72877
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "hall",
+      "ホール",
+      "大型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_66",
@@ -986,7 +1643,16 @@
       "knowledge": 12,
       "satisfaction": 13,
       "sales": 63833
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_67",
@@ -1000,7 +1666,16 @@
       "knowledge": 9,
       "satisfaction": 12,
       "sales": 95568
-    }
+    },
+    "keywords": [
+      "Hiroshima",
+      "hiroshima",
+      "広島",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_68",
@@ -1014,7 +1689,16 @@
       "knowledge": 6,
       "satisfaction": 7,
       "sales": 52419
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "hall",
+      "ホール",
+      "大型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_69",
@@ -1028,7 +1712,16 @@
       "knowledge": 15,
       "satisfaction": 24,
       "sales": 234671
-    }
+    },
+    "keywords": [
+      "Kobe",
+      "kobe",
+      "神戸",
+      "office",
+      "オフィス",
+      "小型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_70",
@@ -1042,7 +1735,16 @@
       "knowledge": 14,
       "satisfaction": 7,
       "sales": 144121
-    }
+    },
+    "keywords": [
+      "Kobe",
+      "kobe",
+      "神戸",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_71",
@@ -1056,7 +1758,16 @@
       "knowledge": 12,
       "satisfaction": 6,
       "sales": 104544
-    }
+    },
+    "keywords": [
+      "Osaka",
+      "osaka",
+      "大阪",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_72",
@@ -1070,7 +1781,16 @@
       "knowledge": 18,
       "satisfaction": 28,
       "sales": 270916
-    }
+    },
+    "keywords": [
+      "Yokohama",
+      "yokohama",
+      "横浜",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_73",
@@ -1084,7 +1804,19 @@
       "knowledge": 23,
       "satisfaction": 25,
       "sales": 284542
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "hall",
+      "ホール",
+      "大型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_74",
@@ -1098,7 +1830,16 @@
       "knowledge": 17,
       "satisfaction": 26,
       "sales": 280053
-    }
+    },
+    "keywords": [
+      "Hiroshima",
+      "hiroshima",
+      "広島",
+      "hall",
+      "ホール",
+      "大型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_75",
@@ -1112,7 +1853,16 @@
       "knowledge": 11,
       "satisfaction": 6,
       "sales": 53254
-    }
+    },
+    "keywords": [
+      "Nagoya",
+      "nagoya",
+      "名古屋",
+      "hall",
+      "ホール",
+      "大型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_76",
@@ -1126,7 +1876,16 @@
       "knowledge": 7,
       "satisfaction": 10,
       "sales": 140548
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_77",
@@ -1140,7 +1899,16 @@
       "knowledge": 9,
       "satisfaction": 6,
       "sales": 78881
-    }
+    },
+    "keywords": [
+      "Osaka",
+      "osaka",
+      "大阪",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_78",
@@ -1154,7 +1922,19 @@
       "knowledge": 24,
       "satisfaction": 28,
       "sales": 267249
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "hall",
+      "ホール",
+      "大型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_79",
@@ -1168,7 +1948,16 @@
       "knowledge": 29,
       "satisfaction": 18,
       "sales": 180382
-    }
+    },
+    "keywords": [
+      "Osaka",
+      "osaka",
+      "大阪",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_80",
@@ -1182,7 +1971,16 @@
       "knowledge": 13,
       "satisfaction": 12,
       "sales": 141910
-    }
+    },
+    "keywords": [
+      "Kobe",
+      "kobe",
+      "神戸",
+      "hall",
+      "ホール",
+      "大型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_81",
@@ -1196,7 +1994,16 @@
       "knowledge": 14,
       "satisfaction": 11,
       "sales": 111110
-    }
+    },
+    "keywords": [
+      "Kyoto",
+      "kyoto",
+      "京都",
+      "hall",
+      "ホール",
+      "大型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_82",
@@ -1210,7 +2017,16 @@
       "knowledge": 9,
       "satisfaction": 14,
       "sales": 120176
-    }
+    },
+    "keywords": [
+      "Osaka",
+      "osaka",
+      "大阪",
+      "hall",
+      "ホール",
+      "大型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_83",
@@ -1224,7 +2040,16 @@
       "knowledge": 13,
       "satisfaction": 8,
       "sales": 149877
-    }
+    },
+    "keywords": [
+      "Kobe",
+      "kobe",
+      "神戸",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_84",
@@ -1238,7 +2063,16 @@
       "knowledge": 11,
       "satisfaction": 6,
       "sales": 78242
-    }
+    },
+    "keywords": [
+      "Osaka",
+      "osaka",
+      "大阪",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_85",
@@ -1252,7 +2086,16 @@
       "knowledge": 8,
       "satisfaction": 13,
       "sales": 77105
-    }
+    },
+    "keywords": [
+      "Kobe",
+      "kobe",
+      "神戸",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_86",
@@ -1266,7 +2109,16 @@
       "knowledge": 20,
       "satisfaction": 21,
       "sales": 326004
-    }
+    },
+    "keywords": [
+      "Nagoya",
+      "nagoya",
+      "名古屋",
+      "conference",
+      "会議室",
+      "中型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_87",
@@ -1280,7 +2132,19 @@
       "knowledge": 21,
       "satisfaction": 15,
       "sales": 448236
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "conference",
+      "会議室",
+      "中型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_88",
@@ -1294,7 +2158,16 @@
       "knowledge": 7,
       "satisfaction": 14,
       "sales": 147680
-    }
+    },
+    "keywords": [
+      "Nagoya",
+      "nagoya",
+      "名古屋",
+      "banquet",
+      "宴会場",
+      "懇親会",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_89",
@@ -1308,7 +2181,16 @@
       "knowledge": 23,
       "satisfaction": 20,
       "sales": 365905
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "office",
+      "オフィス",
+      "小型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_90",
@@ -1322,7 +2204,16 @@
       "knowledge": 10,
       "satisfaction": 7,
       "sales": 77955
-    }
+    },
+    "keywords": [
+      "Sapporo",
+      "sapporo",
+      "札幌",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_91",
@@ -1336,7 +2227,19 @@
       "knowledge": 49,
       "satisfaction": 49,
       "sales": 937931
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "office",
+      "オフィス",
+      "小型",
+      "SSR"
+    ]
   },
   {
     "id": "tkp_gen_92",
@@ -1350,7 +2253,16 @@
       "knowledge": 6,
       "satisfaction": 10,
       "sales": 60510
-    }
+    },
+    "keywords": [
+      "Nagoya",
+      "nagoya",
+      "名古屋",
+      "conference",
+      "会議室",
+      "中型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_93",
@@ -1364,7 +2276,16 @@
       "knowledge": 12,
       "satisfaction": 8,
       "sales": 130470
-    }
+    },
+    "keywords": [
+      "Hiroshima",
+      "hiroshima",
+      "広島",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   },
   {
     "id": "tkp_gen_94",
@@ -1378,7 +2299,19 @@
       "knowledge": 13,
       "satisfaction": 13,
       "sales": 274568
-    }
+    },
+    "keywords": [
+      "Fukuoka",
+      "fukuoka",
+      "福岡",
+      "Hakata",
+      "hakata",
+      "博多",
+      "hall",
+      "ホール",
+      "大型",
+      "SR"
+    ]
   },
   {
     "id": "tkp_gen_95",
@@ -1392,6 +2325,15 @@
       "knowledge": 7,
       "satisfaction": 8,
       "sales": 82843
-    }
+    },
+    "keywords": [
+      "Tokyo",
+      "tokyo",
+      "東京",
+      "office",
+      "オフィス",
+      "小型",
+      "R"
+    ]
   }
 ]

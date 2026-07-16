@@ -27,7 +27,7 @@ export default function TitleView({ onNewGame, onContinue, hasSave, collectedCar
       {/* Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-60"
-        style={{ backgroundImage: "url('/assets/bgimage/title_bg.png')" }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/bgimage/title_bg.png')` }}
       />
       {/* Dark overlay gradient */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/50" />

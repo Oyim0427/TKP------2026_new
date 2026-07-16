@@ -14,6 +14,7 @@ export interface Card {
   location: string;
   image: string;
   stats: CardStats;
+  keywords: string[];
 }
 
 export interface PlayerState {
