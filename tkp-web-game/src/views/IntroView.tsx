@@ -82,7 +82,7 @@ export default function IntroView({ onComplete }: { onComplete: () => void }) {
             src={scene.leftChar === 'player' ? `/assets/chars/player/normal-${state.playerGender}.png` : scene.leftChar} 
             alt="Rookie" 
             className="max-h-full object-contain pointer-events-none" 
-            style={{ transform: 'scaleX(-1)' }} 
+            style={scene.leftChar.includes('senpai') ? { transform: 'scaleX(-1)' } : undefined} 
           />
         </div>
       )}
