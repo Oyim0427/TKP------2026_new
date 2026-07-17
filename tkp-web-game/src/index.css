@@ -50,9 +50,11 @@
 
 /* Base App container scaling */
 #root {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow: hidden;
   background-color: #0f172a; /* slate-900 */
 }
@@ -69,4 +71,12 @@
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
   /* The scaling will be handled by React inline styles based on window size */
   transform-origin: center center;
+  transition: width 0.3s, height 0.3s;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .game-container {
+    width: 1080px;
+    height: 1920px;
+  }
 }

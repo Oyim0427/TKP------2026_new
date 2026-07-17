@@ -41,7 +41,7 @@ export default function TitleView({ onNewGame, onContinue, hasSave, collectedCar
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 0.9, y: 0 }}
             transition={{ delay: char.delay, duration: 0.8, type: 'spring' }}
-            className="absolute bottom-0 h-[75%] object-contain drop-shadow-2xl"
+            className="absolute bottom-0 h-[45%] md:h-[75%] object-contain drop-shadow-2xl"
             style={{ left: char.left }}
           />
         ))}
@@ -52,13 +52,13 @@ export default function TitleView({ onNewGame, onContinue, hasSave, collectedCar
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 1 }}
-        className="relative z-10 flex flex-col items-center"
+        className="relative z-10 flex flex-col items-center max-md:mt-[-50px]"
         style={{ marginTop: '-100px' }}
       >
-        <h1 className="text-[90px] font-bold text-white drop-shadow-2xl mb-4 tracking-widest text-shadow-glow leading-none">
+        <h1 className="text-6xl md:text-[90px] font-bold text-white drop-shadow-2xl mb-4 tracking-widest text-shadow-glow leading-none text-center">
           TKP会場マスター
         </h1>
-        <div className="text-[72px] font-bold text-tkp-red drop-shadow-2xl tracking-widest text-shadow-glow mb-2">
+        <div className="text-5xl md:text-[72px] font-bold text-tkp-red drop-shadow-2xl tracking-widest text-shadow-glow mb-2">
           2026
         </div>
       </motion.div>
@@ -68,14 +68,14 @@ export default function TitleView({ onNewGame, onContinue, hasSave, collectedCar
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.0, duration: 0.8 }}
-        className="relative z-20 flex flex-col items-center gap-6"
+        className="relative z-20 flex flex-col items-center gap-4 md:gap-6 w-full"
       >
         {/* New Game */}
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => setShowGenderSelect(true)}
-          className="w-[400px] py-5 bg-tkp-red text-white text-4xl font-bold rounded-2xl shadow-2xl hover:bg-tkp-red-dark transition-all border-2 border-white/20"
+          className="w-[85%] max-w-[400px] py-4 md:py-5 bg-tkp-red text-white text-2xl md:text-4xl font-bold rounded-2xl shadow-2xl hover:bg-tkp-red-dark transition-all border-2 border-white/20"
         >
           はじめから
         </motion.button>
@@ -85,7 +85,7 @@ export default function TitleView({ onNewGame, onContinue, hasSave, collectedCar
           whileHover={hasSave ? { scale: 1.05 } : {}}
           whileTap={hasSave ? { scale: 0.95 } : {}}
           onClick={() => hasSave && onContinue()}
-          className={`w-[400px] py-5 text-4xl font-bold rounded-2xl shadow-2xl transition-all border-2 ${
+          className={`w-[85%] max-w-[400px] py-4 md:py-5 text-2xl md:text-4xl font-bold rounded-2xl shadow-2xl transition-all border-2 ${
             hasSave 
               ? 'bg-tkp-blue text-white hover:bg-blue-800 border-white/20 cursor-pointer' 
               : 'bg-gray-700/50 text-gray-500 border-gray-600/30 cursor-not-allowed'
@@ -99,7 +99,7 @@ export default function TitleView({ onNewGame, onContinue, hasSave, collectedCar
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => setShowCards(true)}
-          className="w-[400px] py-5 bg-white/10 backdrop-blur text-white text-4xl font-bold rounded-2xl shadow-2xl hover:bg-white/20 transition-all border-2 border-tkp-gold/50"
+          className="w-[85%] max-w-[400px] py-4 md:py-5 bg-white/10 backdrop-blur text-white text-2xl md:text-4xl font-bold rounded-2xl shadow-2xl hover:bg-white/20 transition-all border-2 border-tkp-gold/50"
         >
           カードコレクション
         </motion.button>
@@ -120,26 +120,26 @@ export default function TitleView({ onNewGame, onContinue, hasSave, collectedCar
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
-              className="w-[800px] glass-panel-dark rounded-3xl p-12 flex flex-col items-center"
+              className="w-[95%] max-w-[800px] glass-panel-dark rounded-3xl p-6 md:p-12 flex flex-col items-center"
             >
-              <h2 className="text-5xl font-bold text-white mb-12 tracking-widest border-b-2 border-white/20 pb-4">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 md:mb-12 tracking-widest border-b-2 border-white/20 pb-4 text-center">
                 主人公の性別を選択
               </h2>
               
-              <div className="flex gap-12 mb-12">
+              <div className="flex flex-col md:flex-row gap-6 md:gap-12 mb-8 md:mb-12 w-full justify-center">
                 <button 
                   onClick={() => onNewGame('man')}
-                  className="flex flex-col items-center gap-6 p-8 rounded-2xl border-4 border-transparent hover:border-tkp-blue hover:bg-tkp-blue/20 transition-all group"
+                  className="flex flex-col items-center gap-4 md:gap-6 p-4 md:p-8 rounded-2xl border-4 border-transparent hover:border-tkp-blue hover:bg-tkp-blue/20 transition-all group w-full md:w-auto"
                 >
-                  <img src="/assets/chars/player/normal-man.png" className="w-48 h-48 object-contain drop-shadow-xl group-hover:scale-110 transition-transform" />
-                  <span className="text-3xl font-bold text-white">男性</span>
+                  <img src="/assets/chars/player/normal-man.png" className="w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-xl group-hover:scale-110 transition-transform" />
+                  <span className="text-2xl md:text-3xl font-bold text-white">男性</span>
                 </button>
                 <button 
                   onClick={() => onNewGame('woman')}
-                  className="flex flex-col items-center gap-6 p-8 rounded-2xl border-4 border-transparent hover:border-pink-500 hover:bg-pink-500/20 transition-all group"
+                  className="flex flex-col items-center gap-4 md:gap-6 p-4 md:p-8 rounded-2xl border-4 border-transparent hover:border-pink-500 hover:bg-pink-500/20 transition-all group w-full md:w-auto"
                 >
-                  <img src="/assets/chars/player/normal-woman.png" className="w-48 h-48 object-contain drop-shadow-xl group-hover:scale-110 transition-transform" />
-                  <span className="text-3xl font-bold text-white">女性</span>
+                  <img src="/assets/chars/player/normal-woman.png" className="w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-xl group-hover:scale-110 transition-transform" />
+                  <span className="text-2xl md:text-3xl font-bold text-white">女性</span>
                 </button>
               </div>
 
@@ -169,13 +169,13 @@ export default function TitleView({ onNewGame, onContinue, hasSave, collectedCar
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
-              className="w-[1400px] h-[800px] glass-panel-dark rounded-3xl p-12 flex flex-col"
+              className="w-[95%] max-w-[1400px] h-[85%] max-h-[800px] glass-panel-dark rounded-3xl p-6 md:p-12 flex flex-col"
             >
-              <h2 className="text-5xl font-bold text-tkp-gold mb-8 text-center tracking-widest">
+              <h2 className="text-2xl md:text-5xl font-bold text-tkp-gold mb-6 md:mb-8 text-center tracking-widest shrink-0">
                 カードコレクション ({collectedCards.length} / {cardsData.length})
               </h2>
               
-              <div className="flex-1 grid grid-cols-5 gap-6 overflow-y-auto">
+              <div className="flex-1 grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6 overflow-y-auto pr-2 min-h-0">
                 {cardsData.map((card) => {
                   const owned = collectedCards.includes(card.id);
                   return (

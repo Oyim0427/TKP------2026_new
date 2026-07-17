@@ -62,24 +62,24 @@ export default function EventModal({ onEventComplete }: { onEventComplete: (week
       <motion.div 
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        className="glass-panel w-[1100px] h-[85%] rounded-3xl p-12 flex flex-col border-4 border-tkp-blue/50 justify-between text-shadow"
+        className="glass-panel w-[95%] max-w-[1100px] h-[90%] max-h-[900px] rounded-3xl p-6 md:p-12 flex flex-col border-4 border-tkp-blue/50 justify-between text-shadow"
       >
         <div>
-          <h2 className="text-5xl font-bold text-white mb-4 drop-shadow-md border-b border-white/20 pb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 drop-shadow-md border-b border-white/20 pb-4">
             週末イベント: {event.title}
           </h2>
           
-          <p className="text-2xl text-gray-200 mb-8 leading-relaxed">
+          <p className="text-lg md:text-2xl text-gray-200 mb-4 md:mb-8 leading-relaxed max-h-[150px] overflow-y-auto pr-2">
             {event.description}
           </p>
         </div>
 
         {!showResult ? (
-          <div className="flex-1 flex flex-col justify-between overflow-hidden">
-            <h3 className="text-xl font-bold text-gray-400 mb-3">提案する会場カードを所持カードから選択してください：</h3>
+          <div className="flex-1 flex flex-col justify-between overflow-hidden min-h-0">
+            <h3 className="text-md md:text-xl font-bold text-gray-400 mb-3">提案する会場カードを所持カードから選択してください：</h3>
             
             {hasAnyCard ? (
-              <div className="flex-1 overflow-y-auto pr-2 mb-6 grid grid-cols-4 gap-4 max-h-[350px]">
+              <div className="flex-1 overflow-y-auto pr-2 mb-4 md:mb-6 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
                 {ownedCards.map((card) => {
                   const isSelected = selectedCardId === card.id;
                   return (
@@ -119,10 +119,10 @@ export default function EventModal({ onEventComplete }: { onEventComplete: (week
               </div>
             )}
 
-            <div className="flex justify-center gap-8 pt-4 border-t border-white/10">
+            <div className="flex justify-center gap-4 md:gap-8 pt-4 border-t border-white/10 shrink-0">
               <button
                 onClick={handleGiveUp}
-                className="px-12 py-4 bg-tkp-red text-white text-2xl font-bold rounded-full hover:bg-tkp-red-dark transition-colors shadow-lg hover:scale-105"
+                className="px-6 md:px-12 py-3 md:py-4 bg-tkp-red text-white text-lg md:text-2xl font-bold rounded-full hover:bg-tkp-red-dark transition-colors shadow-lg hover:scale-105"
               >
                 提案を辞退する
               </button>
@@ -130,7 +130,7 @@ export default function EventModal({ onEventComplete }: { onEventComplete: (week
               <button
                 disabled={!selectedCardId}
                 onClick={handlePropose}
-                className={`px-16 py-4 text-2xl font-bold rounded-full transition-all shadow-lg ${
+                className={`px-8 md:px-16 py-3 md:py-4 text-lg md:text-2xl font-bold rounded-full transition-all shadow-lg ${
                   selectedCardId 
                     ? 'bg-tkp-blue text-white hover:bg-tkp-blue/80 hover:scale-105 active:scale-95' 
                     : 'bg-gray-700 text-gray-500 cursor-not-allowed'
