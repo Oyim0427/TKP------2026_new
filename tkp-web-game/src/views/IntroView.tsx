@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameState } from '../hooks/useGameState';
 import CardAcquireModal from '../components/CardAcquireModal';
+import { getAssetUrl } from '../utils/assets';
 
 interface IntroScene {
   bg: string;
@@ -19,7 +20,7 @@ const INTRO_SCENES: IntroScene[] = [
     leftChar: 'player', // Changed to use dynamic player
     rightChar: '/assets/chars/senpai/normal-woman.png',
     speaker: '先輩トレーナー',
-    text: '「4週間の新人導入編で、日程管理、能力配分、会場カード選定を一通り経験した。」',
+    text: '「長期間の研修、本当にお疲れ様！今日から私たちのチームに加わって、実際の案件に対応してもらうよ。」',
     cg: null
   },
   { 
@@ -27,7 +28,7 @@ const INTRO_SCENES: IntroScene[] = [
     leftChar: 'player', 
     rightChar: '/assets/chars/senpai/normal-woman.png',
     speaker: '先輩トレーナー',
-    text: '「ここから3ヶ月Demo本編の大型研修・派遣・九州案件へ進もう。」',
+    text: '「まだ分からないこともたくさんあると思うけれど、実務を通じて少しずつ会社のことを学びながら覚えていってね。」',
     cg: null
   },
   { 
@@ -35,8 +36,25 @@ const INTRO_SCENES: IntroScene[] = [
     leftChar: 'player', 
     rightChar: '/assets/chars/senpai/normal-woman.png',
     speaker: '先輩トレーナー',
-    text: '「まずは案件だ。『20名程度の役員会議。東京駅から近く、落ち着いた雰囲気で、見学時に高級感も伝えたい』とのこと。さっそく准备を進めよう。」',
-    acquireCards: ['tkp_hakata_r', 'tkp_hakata_sr', 'tkp_kyobashi_r', 'tkp_kyobashi_sr', 'tkp_osaka_ssr']
+    text: '「これらは私たちの部署でよく対応する代表的な施設だよ。それぞれの施設の特徴をしっかり覚えておいてね！」',
+    cg: null
+  },
+  {
+    bg: '/assets/bgimage/office_blue.png', 
+    leftChar: 'player', 
+    rightChar: '/assets/chars/senpai/normal-woman.png',
+    speaker: '先輩トレーナー',
+    text: '「まずはこれらの施設から覚えていこう！」',
+    acquireCards: ['tkp_hakata_r', 'tkp_hakata_sr', 'tkp_kyobashi_r', 'tkp_kyobashi_sr', 'tkp_osaka_ssr'],
+    cg: null
+  },
+    {
+    bg: '/assets/bgimage/office_blue.png', 
+    leftChar: 'player', 
+    rightChar: '/assets/chars/senpai/normal-woman.png',
+    speaker: '先輩トレーナー',
+    text: '「さあ、準備ができたら新しい社会人生活のスタートだよ！」',
+    cg: null
   }
 ];
 
@@ -80,16 +98,16 @@ export default function IntroView({ onComplete }: { onComplete: () => void }) {
     <div className="absolute inset-0 bg-black flex flex-col items-center justify-center cursor-pointer overflow-hidden" onClick={handleNext}>
       {/* Background */}
       <img 
-        src={scene.bg} 
+        src={getAssetUrl(scene.bg)} 
         alt="Intro Scene" 
         className="w-full h-full object-cover opacity-60 absolute inset-0"
       />
       
       {/* Left Character (Rookie) */}
       {scene.leftChar && (
-        <div className="absolute bottom-[10%] left-[5%] h-[75%] flex items-end justify-center drop-shadow-2xl z-10">
+        <div className={`absolute bottom-[10%] left-[5%] ${scene.leftChar === 'player' || scene.leftChar?.includes('player') ? 'h-[62%]' : 'h-[80%]'} flex items-end justify-center drop-shadow-2xl z-10`}>
           <img 
-            src={scene.leftChar === 'player' ? `/assets/chars/player/normal-${state.playerGender}.png` : scene.leftChar} 
+            src={getAssetUrl(scene.leftChar === 'player' ? `/assets/chars/player/normal-${state.playerGender}.png` : scene.leftChar)} 
             alt="Rookie" 
             className="max-h-full object-contain pointer-events-none" 
             style={scene.leftChar.includes('senpai') ? { transform: 'scaleX(-1)' } : undefined} 
@@ -99,8 +117,12 @@ export default function IntroView({ onComplete }: { onComplete: () => void }) {
 
       {/* Right Character (Senior) */}
       {scene.rightChar && (
-        <div className="absolute bottom-[10%] right-[5%] h-[80%] flex items-end justify-center drop-shadow-2xl z-10">
-          <img src={scene.rightChar} alt="Senior" className="max-h-full object-contain pointer-events-none" />
+        <div className={`absolute bottom-[10%] right-[5%] ${scene.rightChar === 'player' || scene.rightChar?.includes('player') ? 'h-[62%]' : 'h-[80%]'} flex items-end justify-center drop-shadow-2xl z-10`}>
+          <img 
+            src={getAssetUrl(scene.rightChar === 'player' ? `/assets/chars/player/normal-${state.playerGender}.png` : scene.rightChar)} 
+            alt="Senior" 
+            className="max-h-full object-contain pointer-events-none" 
+          />
         </div>
       )}
 
@@ -115,7 +137,7 @@ export default function IntroView({ onComplete }: { onComplete: () => void }) {
             transition={{ delay: 0.2, type: 'spring' }}
             className="absolute top-[10%] left-1/2 -translate-x-1/2 h-[55%] z-25 glass-panel p-4 rounded-xl"
           >
-            <img src={scene.cg} alt="Event CG" className="h-full object-contain rounded-lg" />
+            <img src={getAssetUrl(scene.cg)} alt="Event CG" className="h-full object-contain rounded-lg" />
           </motion.div>
         )}
       </AnimatePresence>

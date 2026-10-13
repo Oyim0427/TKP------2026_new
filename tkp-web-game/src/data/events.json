@@ -2,43 +2,61 @@
   "weeklyEvents": [
     {
       "id": "week1_event",
-      "title": "A社からの依頼 (東京)",
-      "description": "「20名程度の役員会議。東京駅から近く、落ち着いた雰囲気で、見学時に高級感も伝えたい」とのこと。最適な会場を提案してください。",
+      "title": "A社からの緊急依頼 (東京)",
+      "description": "【顧客要望】役員20名による重要会議と懇親会。「東京駅からアクセス至便で、落ち着いた格式高い雰囲気（PREMIUM仕様）の会場が必要です。見学時にも好印象を与えられる提案をしてください。」",
       "requirements": {
         "location": "Tokyo",
         "minCapacity": 20,
         "keywords": ["premium"]
       },
-      "successFeedback": "正解！東京駅近くの高級感ある会場で、人数規模にもピッタリな提案です。仮予約が成立しました！",
-      "failureFeedback": "残念。提案された会場は要件（東京、20名規模、高級感）を満たしていません。営業は『お客様のニーズに合う会場』を選ぶ仕事です。",
+      "requirementsDetails": {
+        "locationName": "東京 (Tokyo)",
+        "capacityText": "20名以上",
+        "vibeText": "PREMIUM仕様（高級感・格式）",
+        "purposeText": "役員会議・懇親会"
+      },
+      "successFeedback": "正解！東京駅近くの高級感あるPREMIUM会場で、役員会議にピッタリな提案です。仮予約が成立しました！",
+      "failureFeedback": "残念。提案された会場は要件（東京エリア、20名規模以上、PREMIUM高級感）を満たしていません。顧客ニーズを慎重に確認しましょう。",
       "successReward": { "money": 120000, "knowledge": 4, "satisfaction": 10, "reputation": 3 },
       "failureReward": { "money": -100000, "stamina": -10 }
     },
     {
       "id": "week2_event",
-      "title": "大型研修の提案 (大阪)",
-      "description": "全国から集まる大型研修案件。関西で200名規模の重要なセミナーを開催したい。高級感のある会場が必要です。",
+      "title": "大型全社研修の提案 (大阪)",
+      "description": "【顧客要望】全国から幹部社員が集まる大型研修案件。「関西（大阪・梅田周辺）で200名規模の重要なセミナーと懇親会を開催したい。役員も列席するためPREMIUM感・高級感が必須で、200名以上を収容できる大型のプレミアム会場が必要です。」",
       "requirements": {
         "location": "Osaka",
         "minCapacity": 200,
         "keywords": ["premium"]
       },
-      "successFeedback": "大成功！大阪梅田のPREMIUMな空間で、大型研修と懇親会を同時に行えます！",
-      "failureFeedback": "提案された会場は要件（大阪、200名規模、高級感）を満たしていません。特に人数分の座席が確保できるかの確認が必須です。",
+      "requirementsDetails": {
+        "locationName": "大阪 (Osaka)",
+        "capacityText": "200名以上",
+        "vibeText": "PREMIUM仕様（高級感）",
+        "purposeText": "大型セミナー・全社研修・懇親会"
+      },
+      "successFeedback": "大成功！大阪梅田のPREMIUMな空間で、200名規模の大型研修と懇親会を完璧に開催できます！",
+      "failureFeedback": "提案された会場は要件（大阪エリア、200名規模以上、PREMIUM高級感）を満たしていません。特にエリアと収容人数の確認が必須です。",
       "successReward": { "money": 300000, "knowledge": 8, "satisfaction": 15, "reputation": 5 },
       "failureReward": { "money": -100000, "stamina": -15 }
     },
     {
       "id": "week3_event",
-      "title": "九州での表彰式 (博多)",
-      "description": "博多駅圏で、表彰式・懇親会・分科会を組み合わせる提案が求められています。",
+      "title": "九州エリア年度末表彰式 (博多)",
+      "description": "【顧客要望】九州支部における全社表彰式と懇親会。「博多駅圏で100名規模を収容でき、表彰式・懇親会・分科会を組み合わせられるホール設備を備えた会場を提案してください。」",
       "requirements": {
         "location": "Fukuoka",
         "minCapacity": 100,
         "keywords": ["hall"]
       },
-      "successFeedback": "素晴らしい！博多駅圏という場所条件と、ホール＋別室の組み合わせがポイントです。成約しました！",
-      "failureFeedback": "提案された会場は要件（福岡、100名規模、ホール設備）を満たしていません。博多周辺のイベントに対応できる会場を選びましょう。",
+      "requirementsDetails": {
+        "locationName": "福岡・博多 (Fukuoka)",
+        "capacityText": "100名以上",
+        "vibeText": "ホール設備（多目的）",
+        "purposeText": "表彰式・懇親会・分科会"
+      },
+      "successFeedback": "素晴らしい！博多駅圏という場所条件と、100名収容可能なホール設備がピッタリです。成約しました！",
+      "failureFeedback": "提案された会場は要件（福岡・博多エリア、100名規模以上、ホール設備）を満たしていません。博多周辺のホール施設を選びましょう。",
       "successReward": { "money": 200000, "knowledge": 6, "satisfaction": 12, "reputation": 4 },
       "failureReward": { "money": -100000, "stamina": -20 }
     }

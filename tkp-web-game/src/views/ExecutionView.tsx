@@ -5,6 +5,7 @@ import EventModal from '../components/EventModal';
 import CardAcquireModal from '../components/CardAcquireModal';
 import QuestionModal from '../components/QuestionModal';
 import cardsData from '../data/cards.json';
+import { getAssetUrl } from '../utils/assets';
 
 const DAYS = ['月', '火', '水', '木', '金'];
 const CHARACTERS: Record<string, { img: string, name: string, stats: any }> = {
@@ -34,34 +35,34 @@ const CHARACTERS: Record<string, { img: string, name: string, stats: any }> = {
   },
 };
 
-const ACTION_CGS = [
-  '/assets/cgs/cg1-man.png',
-  '/assets/cgs/cg2-man.png',
-  '/assets/cgs/cg3-man.png',
-  '/assets/cgs/cg4-man.png',
-  '/assets/cgs/cg5-man.png',
-];
-
 export default function ExecutionView({ onWeekComplete }: { onWeekComplete: () => void }) {
   const { state, updateState } = useGameState();
+
+  const ACTION_CGS = [
+    getAssetUrl(`/assets/cgs/cg1-${state.playerGender}.png`),
+    getAssetUrl(`/assets/cgs/cg2-${state.playerGender}.png`),
+    getAssetUrl(`/assets/cgs/cg3-${state.playerGender}.png`),
+    getAssetUrl(`/assets/cgs/cg4-${state.playerGender}.png`),
+    getAssetUrl(`/assets/cgs/cg5-${state.playerGender}.png`),
+  ];
 
   const getCharImg = (img: string) => {
     const gender = state.playerGender;
     switch (img) {
       case 'consultation':
-        return `/assets/task_icon/${gender}/client-consultation-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/client-consultation-transparent.png`);
       case 'follow-up':
-        return `/assets/task_icon/${gender}/phone-follow-up-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/phone-follow-up-transparent.png`);
       case 'learning':
-        return `/assets/task_icon/${gender}/venue-layout-review-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/venue-layout-review-transparent.png`);
       case 'advice':
-        return `/assets/task_icon/${gender}/senior-advice-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/senior-advice-transparent.png`);
       case 'project':
-        return `/assets/task_icon/${gender}/project-progress-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/project-progress-transparent.png`);
       case 'route':
-        return `/assets/task_icon/${gender}/route-planning-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/route-planning-transparent.png`);
       default:
-        return img;
+        return getAssetUrl(img);
     }
   };
   const [dayIndex, setDayIndex] = useState(0);

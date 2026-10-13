@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import cardsData from '../data/cards.json';
 import ImageZoomModal from '../components/ImageZoomModal';
+import { getAssetUrl } from '../utils/assets';
 
 interface TitleViewProps {
   onNewGame: (gender?: 'man' | 'woman') => void;
@@ -11,7 +12,7 @@ interface TitleViewProps {
 }
 
 const CHARS = [
-  { img: '/assets/chars/player/normal-man.png', delay: 0.2, left: '0%' },
+  { img: '/assets/chars/player/shocked-man.png', delay: 0.2, left: '0%' },
   { img: '/assets/chars/client/normal-woman.png', delay: 0.4, left: '25%' },
   { img: '/assets/chars/senpai/normal-woman.png', delay: 0.3, left: '52%' },
   { img: '/assets/chars/boss/normal-man.png', delay: 0.5, left: '75%' },
@@ -26,18 +27,18 @@ export default function TitleView({ onNewGame, onContinue, hasSave, collectedCar
     <div className="absolute inset-0 bg-black flex flex-col items-center justify-center overflow-hidden">
       {/* Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-60"
-        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/bgimage/title_bg.png')` }}
+        className="absolute inset-0 bg-cover bg-center opacity-70"
+        style={{ backgroundImage: `url('${getAssetUrl('/assets/bgimage/title_bg.png')}')` }}
       />
       {/* Dark overlay gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/70 backdrop-brightness-75" />
       
       {/* Characters */}
       <div className="absolute inset-0 pointer-events-none">
         {CHARS.map((char, idx) => (
           <motion.img 
             key={idx}
-            src={char.img} 
+            src={getAssetUrl(char.img)} 
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 0.9, y: 0 }}
             transition={{ delay: char.delay, duration: 0.8, type: 'spring' }}
@@ -131,14 +132,14 @@ export default function TitleView({ onNewGame, onContinue, hasSave, collectedCar
                   onClick={() => onNewGame('man')}
                   className="flex flex-col items-center gap-4 md:gap-6 p-4 md:p-8 rounded-2xl border-4 border-transparent hover:border-tkp-blue hover:bg-tkp-blue/20 transition-all group w-full md:w-auto"
                 >
-                  <img src="/assets/chars/player/normal-man.png" className="w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-xl group-hover:scale-110 transition-transform" />
+                  <img src={getAssetUrl('/assets/chars/player/normal-man.png')} className="w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-xl group-hover:scale-110 transition-transform" />
                   <span className="text-2xl md:text-3xl font-bold text-white">男性</span>
                 </button>
                 <button 
                   onClick={() => onNewGame('woman')}
                   className="flex flex-col items-center gap-4 md:gap-6 p-4 md:p-8 rounded-2xl border-4 border-transparent hover:border-pink-500 hover:bg-pink-500/20 transition-all group w-full md:w-auto"
                 >
-                  <img src="/assets/chars/player/normal-woman.png" className="w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-xl group-hover:scale-110 transition-transform" />
+                  <img src={getAssetUrl('/assets/chars/player/normal-woman.png')} className="w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-xl group-hover:scale-110 transition-transform" />
                   <span className="text-2xl md:text-3xl font-bold text-white">女性</span>
                 </button>
               </div>
@@ -191,7 +192,7 @@ export default function TitleView({ onNewGame, onContinue, hasSave, collectedCar
                       <img 
                         src={card.image} 
                         alt={card.name} 
-                        className="w-full h-full object-cover"
+                        className="w-full h-auto block"
                       />
                       {/* Rarity Badge */}
                       <div className={`absolute top-2 right-2 px-3 py-1 rounded-lg text-xl font-bold ${

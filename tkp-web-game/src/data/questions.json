@@ -1,4 +1,66 @@
 {
+  "act_1": [
+    {
+      "text": "商談の冒頭で最も重要なことは何ですか？",
+      "options": ["すぐに価格を提示する", "自社の自慢話をする", "アイスブレイクとヒアリング"],
+      "correctIndex": 2,
+      "successReward": { "satisfaction": 10, "money": 10000 },
+      "failureReward": { "satisfaction": -10 }
+    },
+    {
+      "text": "お客様の要望がフワッとしている時、どう提案しますか？",
+      "options": ["適当なプランを1つ出す", "目的を深堀りし、複数プランを提示", "お客様が決めるまで待つ"],
+      "correctIndex": 1,
+      "successReward": { "satisfaction": 10, "money": 10000 },
+      "failureReward": { "satisfaction": -10 }
+    },
+    {
+      "text": "オフィスの移転・改装を検討中の企業に対し、TKPならではの最適な提案は？",
+      "options": [
+        "「改装期間中の仮移転先としてレンタルオフィスを貸し出し、会議もTKP会場で完結させましょう」",
+        "「改装を諦めて今のオフィスを使い続けましょう」",
+        "「オフィス家具を全て廃棄して買い直しましょう」"
+      ],
+      "correctIndex": 0,
+      "successReward": { "satisfaction": 15, "money": 20000 },
+      "failureReward": { "satisfaction": -10 }
+    },
+    {
+      "text": "TKPが提供する『ワンストップサービス』として正しい説明はどれですか？",
+      "options": [
+        "会場提供だけでなく、お弁当・ケータリング・音響映像・宿泊・交通手配まで窓口一つで完結できること",
+        "会場の鍵の受け渡しだけを行い、他の手配は全てお客様にお願いすること",
+        "お弁当の配達だけを行うサービス"
+      ],
+      "correctIndex": 0,
+      "successReward": { "satisfaction": 12, "money": 15000 },
+      "failureReward": { "satisfaction": -5 }
+    }
+  ],
+  "act_2": [
+    {
+      "text": "過去に貸会議室を利用された顧客へのフォローとして、レンタルオフィス提案が響きやすいタイミングは？",
+      "options": [
+        "新規プロジェクトチームの発足や、支店・サテライトオフィスの開設を検討されている時",
+        "社員全員が長期休暇に入っている時",
+        "企業の創立記念日の当日"
+      ],
+      "correctIndex": 0,
+      "successReward": { "reputation": 10, "money": 15000 },
+      "failureReward": { "reputation": -5 }
+    },
+    {
+      "text": "レンタルオフィスをご契約中の既存顧客に対する、さらなるアップセル提案として効果的なのは？",
+      "options": [
+        "社内会議や採用説明会、懇親会での同ビル内の貸会議室やケータリングの利用提案",
+        "オフィスを解約して在宅勤務に戻る提案",
+        "関係のない他社のサービスを販売する"
+      ],
+      "correctIndex": 0,
+      "successReward": { "satisfaction": 10, "money": 20000 },
+      "failureReward": { "satisfaction": -5 }
+    }
+  ],
   "act_3": [
     {
       "text": "プロジェクターのルーメン数は、何に影響しますか？",
@@ -20,6 +82,39 @@
       "correctIndex": 1,
       "successReward": { "knowledge": 10 },
       "failureReward": { "knowledge": -5 }
+    },
+    {
+      "text": "TKPの『レンタルオフィス・フレキシブルオフィス』を提案する最大のメリットは何ですか？",
+      "options": [
+        "初期費用や内装工事・家具手配が不要で、即座に業務を開始できること",
+        "必ず10年以上の契約期間が義務付けられていること",
+        "自社ビルを建築する必要があること"
+      ],
+      "correctIndex": 0,
+      "successReward": { "knowledge": 12, "reputation": 3 },
+      "failureReward": { "knowledge": -5 }
+    },
+    {
+      "text": "TKPのコアビジネスモデルである『空間再生ビジネス』とはどのような事業ですか？",
+      "options": [
+        "新築オフィスビルを建設することだけを専門にする事業",
+        "遊休不動産やスペースを借り受け、付加価値をつけて会議室やオフィスとして再生する事業",
+        "中古家具のみを販売する事業"
+      ],
+      "correctIndex": 1,
+      "successReward": { "knowledge": 15 },
+      "failureReward": { "knowledge": -5 }
+    },
+    {
+      "text": "レンタルオフィスと貸会議室を併用する『ハイブリッド利用』のメリットとして適切なのは？",
+      "options": [
+        "日常業務はレンタルオフィスで行い、大人数の会議や採用面接時だけ同ビルの貸会議室を使える効率性",
+        "会議室を使うたびに別の都道府県へ移動しなければならないこと",
+        "オフィス内に一切パソコンを持ち込めないこと"
+      ],
+      "correctIndex": 0,
+      "successReward": { "knowledge": 12 },
+      "failureReward": { "knowledge": -5 }
     }
   ],
   "act_4": [
@@ -36,22 +131,52 @@
       "correctIndex": 1,
       "successReward": { "reputation": 5, "knowledge": 5 },
       "failureReward": { "reputation": -5 }
-    }
-  ],
-  "act_1": [
-    {
-      "text": "商談の冒頭で最も重要なことは何ですか？",
-      "options": ["すぐに価格を提示する", "自社の自慢話をする", "アイスブレイクとヒアリング"],
-      "correctIndex": 2,
-      "successReward": { "satisfaction": 10, "money": 10000 },
-      "failureReward": { "satisfaction": -10 }
     },
     {
-      "text": "お客様の要望がフワッとしている時、どう提案しますか？",
-      "options": ["適当なプランを1つ出す", "目的を深堀りし、複数プランを提示", "お客様が決めるまで待つ"],
+      "text": "お客様が『一般的な賃貸オフィス』と『TKPのレンタルオフィス』で迷っています。先輩としてどうアドバイスする？",
+      "options": [
+        "「敷金・礼金、内装工事費、退去時の原状回復費用をトータル比較すれば、コストとスピードでTKPが圧倒的に有利と伝えよう」",
+        "「賃貸オフィスの方がいいですよと他社を勧めよう」",
+        "「価格の勝負なので見積もりを無条件で半額にしよう」"
+      ],
+      "correctIndex": 0,
+      "successReward": { "reputation": 8, "knowledge": 8 },
+      "failureReward": { "reputation": -5 }
+    },
+    {
+      "text": "レンタルオフィスの内见（現地見学）で、お客様へ最もアピールすべきポイントは？",
+      "options": [
+        "周辺の飲食店の数だけをひたすら紹介する",
+        "執務室の防音性・セキュリティ、共用ラウンジの快適さや有人受付のサポート体制",
+        "ビルの築年数の古さだけを強調する"
+      ],
       "correctIndex": 1,
-      "successReward": { "satisfaction": 10, "money": 10000 },
-      "failureReward": { "satisfaction": -10 }
+      "successReward": { "reputation": 6, "knowledge": 6 },
+      "failureReward": { "reputation": -5 }
+    }
+  ],
+  "act_5": [
+    {
+      "text": "レンタルオフィスの契約手続きを進める際、スムーズな導入のために事前確認すべき事項は？",
+      "options": [
+        "入居予定人数、必要なデスク・チェアの脚数、インターネット回線仕様と利用開始希望日",
+        "社員全員の出身地と趣味",
+        "ビルのエレベーターの速度"
+      ],
+      "correctIndex": 0,
+      "successReward": { "knowledge": 10, "satisfaction": 10 },
+      "failureReward": { "knowledge": -5 }
+    },
+    {
+      "text": "レンタルオフィスと貸会議室を組み合わせた長期研修案件で、成约率を高める提案書の内容は？",
+      "options": [
+        "執務室と研修室の導線レイアウト図、割引を適用したトータル見積書、利用スケジュール案",
+        "会社の歴史だけを書いたパンフレット",
+        "会場の外観写真のみ"
+      ],
+      "correctIndex": 0,
+      "successReward": { "reputation": 10, "money": 25000 },
+      "failureReward": { "reputation": -5 }
     }
   ],
   "act_6": [
@@ -67,6 +192,28 @@
       "options": ["自分で直そうとする", "設定を確認し、必要なら施設管理へ連絡", "我慢してもらう"],
       "correctIndex": 1,
       "successReward": { "stamina": 10 },
+      "failureReward": { "stamina": -10 }
+    },
+    {
+      "text": "レンタルオフィスエリアをRouting（巡回）する際、特にチェックすべきポイントは？",
+      "options": [
+        "共用ラウンジや給茶機の清潔さ、Wi-Fi接続の安定性、セキュリティドアの施錠状況",
+        "お客様の個室を無断で開けて中を覗くこと",
+        "ロビーのソファで休憩すること"
+      ],
+      "correctIndex": 0,
+      "successReward": { "stamina": 10, "reputation": 5 },
+      "failureReward": { "stamina": -10 }
+    },
+    {
+      "text": "貸会議室やレンタルオフィスの有人受付にて、お客様をお迎えする際の基本姿勢は？",
+      "options": [
+        "明るい笑顔と丁寧な挨拶で、利用部屋や設備の使い方をスムーズにご案内する",
+        "何も言わずに無言で鍵だけを渡す",
+        "自分のパソコン作業を優先して顔を上げない"
+      ],
+      "correctIndex": 0,
+      "successReward": { "stamina": 10, "satisfaction": 5 },
       "failureReward": { "stamina": -10 }
     }
   ]

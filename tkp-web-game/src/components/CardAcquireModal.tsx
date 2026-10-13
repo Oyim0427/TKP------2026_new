@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import cardsData from '../data/cards.json';
 import ImageZoomModal from './ImageZoomModal';
+import { getAssetUrl } from '../utils/assets';
 
 interface CardAcquireModalProps {
   cardIds: string[];
@@ -37,13 +38,13 @@ export default function CardAcquireModal({ cardIds, onAcquire }: CardAcquireModa
             {cards.map((card, idx) => (
               <motion.div 
                 key={card.id}
-                className="relative shrink-0 w-[calc(50%-0.5rem)] md:w-[256px] aspect-[2.5/4] rounded-xl overflow-hidden shadow-2xl border-2 border-white/20 cursor-pointer hover:border-tkp-gold transition-colors group"
+                className="relative shrink-0 w-[calc(50%-0.5rem)] md:w-[256px] rounded-xl overflow-hidden shadow-2xl border-2 border-white/20 cursor-pointer hover:border-tkp-gold transition-colors group"
                 initial={{ rotateY: 90 }}
                 animate={{ rotateY: 0 }}
                 transition={{ delay: 0.3 + idx * 0.1, type: "spring", stiffness: 100 }}
                 onClick={() => setZoomedImage(card.image)}
               >
-                <img src={card.image} alt={card.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                <img src={getAssetUrl(card.image)} alt={card.name} className="w-full h-auto block group-hover:scale-105 transition-transform" />
                 <div className="absolute top-2 md:top-4 right-2 md:right-4 bg-black/60 px-2 md:px-4 py-1 rounded-full text-white font-bold text-sm md:text-lg border border-white/30 backdrop-blur-md z-10">
                   {card.rarity}
                 </div>

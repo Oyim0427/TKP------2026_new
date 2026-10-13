@@ -4,6 +4,7 @@ import eventsData from '../data/events.json';
 import cardsData from '../data/cards.json';
 import { motion } from 'framer-motion';
 import type { Card } from '../types';
+import { getAssetUrl } from '../utils/assets';
 
 export default function EventModal({ onEventComplete }: { onEventComplete: (weekComplete: boolean) => void }) {
   const { state, updateState } = useGameState();
@@ -11,9 +12,11 @@ export default function EventModal({ onEventComplete }: { onEventComplete: (week
   const [showResult, setShowResult] = useState(false);
   const [isGivenUp, setIsGivenUp] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [showWarning, setShowWarning] = useState(false);
   const [eventIndex] = useState(() => Math.floor(Math.random() * eventsData.weeklyEvents.length));
 
-  const event = eventsData.weeklyEvents[eventIndex];
+  const event = eventsData.weeklyEvents[eventIndex] as any;
+  const reqs = event.requirements;
 
   // Get details of cards owned by the player
   const ownedCards = (cardsData as Card[]).filter(c => state.collectedCards.includes(c.id));
@@ -22,11 +25,14 @@ export default function EventModal({ onEventComplete }: { onEventComplete: (week
   const hasAnyCard = ownedCards.length > 0;
 
   const handlePropose = () => {
-    if (!selectedCardId) return;
+    if (!selectedCardId) {
+      setIsSuccess(false);
+      setShowResult(true);
+      return;
+    }
     const card = ownedCards.find(c => c.id === selectedCardId);
     if (!card) return;
 
-    const reqs = event.requirements;
     // Location check (matches location name or is in keywords)
     const locMatch = card.location.toLowerCase() === reqs.location.toLowerCase() ||
                      card.keywords.includes(reqs.location);
@@ -38,6 +44,14 @@ export default function EventModal({ onEventComplete }: { onEventComplete: (week
     const success = locMatch && capMatch && kwMatch;
     setIsSuccess(success);
     setShowResult(true);
+  };
+
+  const handleProposeClick = () => {
+    if (!selectedCardId) {
+      setShowWarning(true);
+    } else {
+      handlePropose();
+    }
   };
 
   const handleGiveUp = () => {
@@ -62,50 +76,51 @@ export default function EventModal({ onEventComplete }: { onEventComplete: (week
       <motion.div 
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        className="glass-panel w-[95%] max-w-[1100px] h-[90%] max-h-[900px] rounded-3xl p-6 md:p-12 flex flex-col border-4 border-tkp-blue/50 justify-between text-shadow"
+        className="relative glass-panel w-[95%] max-w-[1100px] h-[90%] max-h-[900px] rounded-3xl p-6 md:p-10 flex flex-col border-4 border-tkp-blue/50 justify-between text-shadow"
       >
         <div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 drop-shadow-md border-b border-white/20 pb-4">
-            週末イベント: {event.title}
+          <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 drop-shadow-md border-b border-white/20 pb-3 flex items-center justify-between">
+            <span>週末イベント: {event.title}</span>
+            <span className="text-sm font-normal px-3 py-1 bg-tkp-blue/40 border border-tkp-blue rounded-full text-blue-200">案件提案依頼</span>
           </h2>
           
-          <p className="text-lg md:text-2xl text-gray-200 mb-4 md:mb-8 leading-relaxed max-h-[150px] overflow-y-auto pr-2">
+          <p className="text-base md:text-xl text-gray-200 mb-6 leading-relaxed max-h-[140px] overflow-y-auto pr-2">
             {event.description}
           </p>
         </div>
 
         {!showResult ? (
           <div className="flex-1 flex flex-col justify-between overflow-hidden min-h-0">
-            <h3 className="text-md md:text-xl font-bold text-gray-400 mb-3">提案する会場カードを所持カードから選択してください：</h3>
+            <h3 className="text-sm md:text-base font-bold text-gray-300 mb-2">提案する会場カードを所持カードから選択してください：</h3>
             
             {hasAnyCard ? (
-              <div className="flex-1 overflow-y-auto pr-2 mb-4 md:mb-6 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+              <div className="flex-1 overflow-y-auto pr-2 mb-3 md:mb-4 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
                 {ownedCards.map((card) => {
                   const isSelected = selectedCardId === card.id;
+
                   return (
                     <div
                       key={card.id}
                       onClick={() => setSelectedCardId(card.id)}
-                      className={`relative flex flex-col items-center glass-panel-dark rounded-xl p-4 transition-all border-2 cursor-pointer ${
+                      className={`relative flex flex-col justify-between items-center glass-panel-dark rounded-xl p-3 transition-all border-2 cursor-pointer overflow-hidden ${
                         isSelected 
-                          ? 'border-tkp-gold shadow-lg shadow-tkp-gold/30 scale-95' 
-                          : 'border-white/10 hover:border-white/30 hover:scale-[1.02]'
+                          ? 'border-tkp-gold shadow-lg shadow-tkp-gold/40 scale-95 ring-2 ring-tkp-gold' 
+                          : 'border-white/15 hover:border-white/40 hover:scale-[1.02]'
                       }`}
                     >
-                      <img src={card.image} alt={card.name} className="h-32 object-contain mb-3 drop-shadow-md rounded-lg" />
-                      <div className="text-lg font-bold text-white text-center leading-tight mb-2 min-h-10 flex items-center justify-center">
+                      <div className="w-full flex-1 flex items-center justify-center my-1 overflow-hidden min-h-[160px]">
+                        <img src={getAssetUrl(card.image)} alt={card.name} className="w-full h-full max-h-[220px] object-contain drop-shadow-md transition-transform hover:scale-105" />
+                      </div>
+                      <div className="text-sm md:text-base font-bold text-white text-center leading-tight pt-2 mt-auto border-t border-white/10 w-full flex items-center justify-center min-h-10">
                         {card.name}
                       </div>
-                      <div className="flex justify-between w-full text-sm text-gray-400 font-bold border-t border-white/5 pt-2">
-                        <span>収容: {card.capacity}名</span>
-                        <span>{card.location}</span>
-                      </div>
-                      <div className={`absolute top-2 left-2 px-2 py-0.5 rounded text-xs font-black border ${
+
+                      <div className={`absolute top-2 left-2 px-2.5 py-0.5 rounded text-xs font-black border shadow-md backdrop-blur-md z-10 ${
                         card.rarity === 'SSR' 
-                          ? 'bg-yellow-500/20 border-yellow-400 text-yellow-400' 
+                          ? 'bg-yellow-500/80 border-yellow-300 text-white' 
                           : card.rarity === 'SR' 
-                          ? 'bg-blue-500/20 border-blue-400 text-blue-400' 
-                          : 'bg-gray-500/20 border-gray-400 text-gray-400'
+                          ? 'bg-blue-600/80 border-blue-300 text-white' 
+                          : 'bg-gray-700/80 border-gray-400 text-white'
                       }`}>
                         {card.rarity}
                       </div>
@@ -128,15 +143,10 @@ export default function EventModal({ onEventComplete }: { onEventComplete: (week
               </button>
               
               <button
-                disabled={!selectedCardId}
-                onClick={handlePropose}
-                className={`px-8 md:px-16 py-3 md:py-4 text-lg md:text-2xl font-bold rounded-full transition-all shadow-lg ${
-                  selectedCardId 
-                    ? 'bg-tkp-blue text-white hover:bg-tkp-blue/80 hover:scale-105 active:scale-95' 
-                    : 'bg-gray-700 text-gray-500 cursor-not-allowed'
-                }`}
+                onClick={handleProposeClick}
+                className="px-8 md:px-16 py-3 md:py-4 text-lg md:text-2xl font-bold rounded-full transition-all shadow-lg bg-tkp-blue text-white hover:bg-tkp-blue/80 hover:scale-105 active:scale-95"
               >
-                この会場を提案する
+                {selectedCardId ? 'この会場を提案する' : 'カードを選ばずに提案する'}
               </button>
             </div>
           </div>
@@ -214,6 +224,36 @@ export default function EventModal({ onEventComplete }: { onEventComplete: (week
               </>
             )}
           </motion.div>
+        )}
+
+        {/* No-selection Warning Overlay */}
+        {showWarning && (
+          <div className="absolute inset-0 bg-black/95 rounded-3xl flex flex-col items-center justify-center p-8 z-[60] backdrop-blur-md">
+            <div className="text-4xl font-bold text-yellow-400 mb-6 text-center">
+              ⚠️ 注意
+            </div>
+            <p className="text-2xl md:text-3xl text-white text-center mb-12 max-w-[700px] leading-relaxed">
+              会場カードが選択されていません。<br />
+              カードを選ばないと提案は失敗してしまいますが、よろしいですか？
+            </p>
+            <div className="flex gap-8 justify-center">
+              <button
+                onClick={() => setShowWarning(false)}
+                className="px-10 py-4 md:px-12 md:py-5 bg-gray-600 hover:bg-gray-700 text-white text-xl md:text-2xl font-bold rounded-full transition-all shadow-lg hover:scale-105"
+              >
+                戻る
+              </button>
+              <button
+                onClick={() => {
+                  setShowWarning(false);
+                  handlePropose();
+                }}
+                className="px-10 py-4 md:px-12 md:py-5 bg-tkp-red hover:bg-tkp-red-dark text-white text-xl md:text-2xl font-bold rounded-full transition-all shadow-lg hover:scale-105"
+              >
+                提案を続ける
+              </button>
+            </div>
+          </div>
         )}
       </motion.div>
     </div>

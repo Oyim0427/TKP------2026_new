@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
+import { getAssetUrl } from '../utils/assets';
 
 interface ImageZoomModalProps {
   imageUrl: string | null;
@@ -22,7 +23,7 @@ export default function ImageZoomModal({ imageUrl, onClose }: ImageZoomModalProp
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.8, opacity: 0 }}
           transition={{ type: "spring", bounce: 0.4 }}
-          src={imageUrl}
+          src={getAssetUrl(imageUrl)}
           alt="Zoomed"
           className="max-w-full max-h-full object-contain rounded-2xl shadow-[0_0_100px_rgba(255,255,255,0.2)]"
           onClick={(e) => e.stopPropagation()}

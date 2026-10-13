@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useGameState } from '../hooks/useGameState';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Users, Briefcase, Plus, X } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 const CHARACTERS = [
   { id: 'act_1', name: '商談する', img: 'consultation', color: 'bg-blue-500', stamina: -15 },
@@ -21,19 +22,19 @@ export default function ScheduleView({ onExecute }: { onExecute: () => void }) {
     const gender = state.playerGender;
     switch (img) {
       case 'consultation':
-        return `/assets/task_icon/${gender}/client-consultation-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/client-consultation-transparent.png`);
       case 'follow-up':
-        return `/assets/task_icon/${gender}/phone-follow-up-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/phone-follow-up-transparent.png`);
       case 'learning':
-        return `/assets/task_icon/${gender}/venue-layout-review-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/venue-layout-review-transparent.png`);
       case 'advice':
-        return `/assets/task_icon/${gender}/senior-advice-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/senior-advice-transparent.png`);
       case 'project':
-        return `/assets/task_icon/${gender}/project-progress-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/project-progress-transparent.png`);
       case 'route':
-        return `/assets/task_icon/${gender}/route-planning-transparent.png`;
+        return getAssetUrl(`/assets/task_icon/${gender}/route-planning-transparent.png`);
       default:
-        return img;
+        return getAssetUrl(img);
     }
   };
   const [localSchedule, setLocalSchedule] = useState<Record<number, string>>(state.schedule || {});
@@ -226,7 +227,12 @@ export default function ScheduleView({ onExecute }: { onExecute: () => void }) {
                       if (prevCharId) {
                         const prevChar = CHARACTERS.find(c => c.id === prevCharId);
                         if (prevChar) simulatedStamina = Math.max(0, simulatedStamina + prevChar.stamina);
-                        if (prevCharId === 'act_5') availableCases--;
+                      }
+                    }
+                    
+                    for (let i = 0; i < 5; i++) {
+                      if (i !== selectedDay && localSchedule[i] === 'act_5') {
+                        availableCases--;
                       }
                     }
                   }
